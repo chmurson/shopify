@@ -1,0 +1,47 @@
+
+.section--pre-shipping-method .radio__input
+  display inline-block;
+  vertical-align top;
+
+.btn[disabled]
+  opacity 0.5;
+
+.step
+  &__sections
+    padding-top 3em;
+
+.map
+  &__info-window
+    text-align center
+    &-description
+      font-size 0.8em
+    &-link
+      cursor pointer
+
+#inpost-map {
+  width 100%
+  height 320px
+}
+
+.section
+  &--inpost-paczkomat-selection.hidden
+    display block !important
+    position absolute
+    top -9000px
+    left - 9000px
+    height 300px
+    width 300px
+  &--inpost-paczkomat-selection
+    .section__content
+    position relative
+    &__loading
+      position: absolute;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.2);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      color: white;
+      font-size: 1.2em;
+
