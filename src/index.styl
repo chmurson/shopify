@@ -24,6 +24,7 @@
 }
 
 .section
+
   &--inpost-paczkomat-selection.hidden
     display block !important
     position absolute
@@ -31,17 +32,26 @@
     left - 9000px
     height 300px
     width 300px
+
   &--inpost-paczkomat-selection
+
     .section__content
-    position relative
-    &__loading
-      position: absolute;
-      z-index: 1;
-      background-color: rgba(0, 0, 0, 0.2);
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      color: white;
-      font-size: 1.2em;
+      position relative
+
+      &__loading
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.2);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        color: white;
+        font-size: 1.2em;
+
+        .cssload-indicator-wheel{
+          border 3px solid #fff
+          border-right-color transparent
+          border-left-color transparent
+        }
 

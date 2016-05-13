@@ -1,5 +1,5 @@
 'use strict';
-
+import 'js-marker-clusterer';
 import $ from 'jquery';
 
 const createMarkerInfoWindowContent = Symbol();
@@ -8,6 +8,8 @@ const initInfoWindowContentEvents = Symbol();
 
 const infoWindowCSSClass = 'map__info-window';
 const infoWindowLinkCSSClass = infoWindowCSSClass + '-link';
+
+MarkerClusterer.prototype.MARKER_CLUSTER_IMAGE_PATH_ = 'images/cluster-marker/m';
 
 export class Map {
 

@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "rm -rf build\\* && cp -R assets/ build && webpack",
+    "build": "rm -rf build\\* && npm run copy-assets && webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --progress --colors --watch",
-    "start-http-server": "http-server ./build"
+    "start-http-server": "http-server ./build",
+    "copy-assets": "cp -R assets/ build && npm run copy-marker-cluster-assets",
+    "copy-marker-cluster-assets" : "cp -R node_modules/js-marker-clusterer/images build/images/cluster-marker"
   },
   "author": "",
   "license": "ISC",

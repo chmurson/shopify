@@ -1,4 +1,3 @@
-import 'js-marker-clusterer';
 import $ from 'jquery';
 import {GOOGLE_API_KEY, STORAGE_PACZKOMATY_KEY} from './config';
 
@@ -9,6 +8,7 @@ import createPaczkomatInfOSection, {paczkomatInfoSectionClass} from './paczkomat
 import {addressSection} from './delivery-address-section/index';
 
 import loadingIndicatorHtml from './css-loading-indicator/template.html';
+import './css-loading-indicator/style.styl';
 
 const inpostDeliveryButtonId = 'paczkomat-inpost';
 const hiddenRadioId = 'hidden-option';
@@ -66,7 +66,7 @@ const mapHtml = `
         </div>
         <div class="section__content">
           <div class="section__content__loading">
-            <span>Loading...</span>
+            ${loadingIndicatorHtml}
           </div>
           <div id="${mapContainerId}"></div>
         </div>
@@ -79,7 +79,7 @@ const $submitButtonDefaultLabel = $submitButton.children('span');
 const $submitButtonPaczkomatyLabelHtml = $(`<span>Potwierdź sposób dostawy</span>`)
   .hide()
   .appendTo($submitButton);
-const $sectionOptional = $('.section--optional').hide();
+const $sectionOptional = $('.section--optional');
 
 
 /**
@@ -92,6 +92,7 @@ export function runContactInformation() {
   addressSection.hide();
   $preShippingMethodSelection.insertAfter($contactInformation);
   $map.insertAfter($preShippingMethodSelection);
+  const $mapLoadingIndicator = $('.section__content__loading');
 
   //setting new consts
   const $radioPaczkomat = $('#' + inpostDeliveryButtonId).attr('disabled', false);
@@ -106,6 +107,9 @@ export function runContactInformation() {
     map = _map;
     $radioPaczkomat.attr('disabled', false);
     map.onPaczkomatSelected(selectPaczkomat);
+    map.loadMarkers().then(()=> {
+      $mapLoadingIndicator.hide();
+    });
   });
 
   //register change events for radio buttons
