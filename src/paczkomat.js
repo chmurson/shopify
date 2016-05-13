@@ -19,8 +19,8 @@ export class Paczkomat {
     return `${this.locationdescription} ${this.locationDescription2}`.trim();
   }
 
-  get countryCode() {
-    return 'PL';
+  get country() {
+    return 'Poland';
   }
 }
 

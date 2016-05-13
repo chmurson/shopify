@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05452252-7811-468e-b2c8-1d1e06b45a3c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/checkout_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/contact-information.js" afterPath="$PROJECT_DIR$/src/contact-information.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css-loading-indicator/style.styl" afterPath="$PROJECT_DIR$/src/css-loading-indicator/style.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.styl" afterPath="$PROJECT_DIR$/src/index.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/map.js" afterPath="$PROJECT_DIR$/src/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/delivery-address-section/index.js" afterPath="$PROJECT_DIR$/src/delivery-address-section/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/paczkomat.js" afterPath="$PROJECT_DIR$/src/paczkomat.js" />
     </list>
     <ignored path="shopify-glassify-checkout-paczkomaty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +28,8 @@
       <file leaf-file-name="contact-information.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/contact-information.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+            <state relative-caret-position="561">
+              <caret line="165" column="21" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <marker date="1463099005000" expanded="true" signature="817:2309" placeholder="..." />
@@ -59,11 +54,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vcs.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/delivery-address-section/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paczkomat.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/paczkomat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vcs.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -115,43 +150,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="107" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="markerclusterer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/js-marker-clusterer/src/markerclusterer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="189" column="52" selection-start-line="189" selection-start-column="47" selection-end-line="189" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="m4.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/js-marker-clusterer/images/m4.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -179,8 +177,6 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/src/paczkomatInfoSection/style.styl" />
         <option value="$PROJECT_DIR$/src/paczkomatInfoSection/index.js" />
-        <option value="$PROJECT_DIR$/src/paczkomat.js" />
-        <option value="$PROJECT_DIR$/src/delivery-address-section/index.js" />
         <option value="$PROJECT_DIR$/src/css-loading-indicator/index.js" />
         <option value="$PROJECT_DIR$/src/css-loading-indicator/template.view.html" />
         <option value="$PROJECT_DIR$/src/css-loading-indicator/template.html" />
@@ -197,6 +193,9 @@
         <option value="$PROJECT_DIR$/src/index.styl" />
         <option value="$PROJECT_DIR$/src/css-loading-indicator/style.styl" />
         <option value="$PROJECT_DIR$/src/contact-information.js" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/paczkomat.js" />
+        <option value="$PROJECT_DIR$/src/delivery-address-section/index.js" />
       </list>
     </option>
   </component>
@@ -286,7 +285,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css-loading-indicator" />
+              <option name="myItemId" value="paczkomatInfoSection" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,21 +299,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopify-glassify-checkout-paczkomaty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopify-glassify-checkout-paczkomaty" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="delivery-address-section" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,7 +318,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="Pa&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/paczkomat.js&#10;inp&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/inpostApi.js&#10;we&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/webpack.config.js" />
+    <property name="SearchEverywhereHistoryKey" value="works&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/.idea/workspace.xml&#10;Pa&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/paczkomat.js&#10;inp&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/inpostApi.js&#10;we&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/webpack.config.js" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="project.scopes" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -423,10 +412,25 @@
       <workItem from="1462394347708" duration="1890000" />
       <workItem from="1462565926723" duration="33915000" />
     </task>
+    <task id="LOCAL-00001" summary="project file update">
+      <created>1463099121861</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1463099121861</updated>
+    </task>
+    <task id="LOCAL-00002" summary="project file update">
+      <created>1463099154223</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1463099154223</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48189000" />
+    <option name="totallyTimeSpent" value="49997000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -439,14 +443,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21277878" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.4954792" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5045208" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -471,6 +475,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project file update" />
+    <option name="LAST_COMMIT_MESSAGE" value="project file update" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -478,33 +486,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/contact-information.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1463099005000" expanded="true" signature="817:2309" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="851:923" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="959:2300" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="1016:2289" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="1056:1578" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="1094:1540" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="1134:1337" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="1380:1515" placeholder="..." />
-            <marker date="1463099005000" expanded="false" signature="1718:1732" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="1772:2269" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="1899:2231" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="1938:2069" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="2110:2206" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="2494:2822" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="2532:2607" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="2646:2809" placeholder="..." />
-            <marker date="1463099005000" expanded="true" signature="2696:2749" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shipping-method.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -585,20 +566,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/paczkomatInfoSection/style.styl.html" />
-    <entry file="file://$PROJECT_DIR$/src/paczkomat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/delivery-address-section/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/paczkomatInfoSection/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -617,14 +584,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css-loading-indicator/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/glassify.eu - Dalej -_.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1095">
@@ -815,10 +774,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/paczkomat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/contact-information.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+        <state relative-caret-position="561">
+          <caret line="165" column="21" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <marker date="1463099005000" expanded="true" signature="817:2309" placeholder="..." />
@@ -842,10 +833,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+    <entry file="file://$PROJECT_DIR$/src/delivery-address-section/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="600">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding />
         </state>
       </provider>

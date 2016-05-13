@@ -33,8 +33,19 @@ function showPersonalInformationOnly() {
 }
 
 function show() {
-  get().show().find('.field').show();
-  get().find('input').each((input)=>$(input).val(''));
+  get().show().find('.field').each((key, field)=> {
+    const $field = $(field);
+    const $formElement = $field.find('input, select').filter('[disabled]');
+    if ($formElement.length === 0) {
+      $field.show();
+    }
+  });
+  get().find('input, select').each((key, inputOrSelect)=>{
+    if (inputsIdsToShow.indexOf($(inputOrSelect).attr('id')) !== -1) {
+      return;
+    }
+    $(inputOrSelect).val('')
+  });
 }
 
 function showInformation() {
@@ -53,7 +64,7 @@ function fillWithPaczkomat(paczkomat) {
   get().find(`#checkout_shipping_address_address1`).val(paczkomat.street);
   get().find(`#checkout_shipping_address_address2`).val(paczkomat.buildingnumber);
   get().find(`#checkout_shipping_address_city`).val(paczkomat.town);
-  get().find(`#checkout_shipping_address_country`).val(paczkomat.countryCode);
+  get().find(`#checkout_shipping_address_country`).val(paczkomat.country);
   get().find(`#checkout_shipping_address_zip`).val(paczkomat.postcode);
 }
 
