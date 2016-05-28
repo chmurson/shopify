@@ -1,11 +1,15 @@
 import $ from 'jquery';
-import {GOOGLE_API_KEY, STORAGE_PACZKOMATY_KEY} from './config';
+
+
+import {GOOGLE_API_KEY, STORAGE_PACZKOMATY_KEY, STORAGE_PERSONAL_INFO} from './../config';
 
 import {InpostApi} from './inpostApi';
 import {Map} from './map';
+import PersonalInfo from './../common/PersonalInfo';
 
 import createPaczkomatInfOSection, {paczkomatInfoSectionClass} from './paczkomatInfoSection/index'
 import {addressSection} from './delivery-address-section/index';
+import {paczkomatySelect} from './paczkomatSelect';
 
 import loadingIndicatorHtml from './css-loading-indicator/template.html';
 import './css-loading-indicator/style.styl';
@@ -36,7 +40,7 @@ const preShippingMethodSelectionHtml = `
             <label for="paczkomat-inpost">
               <span class="radio__label"">Paczkomat Inpost</span>
               <!--@todo add inpost logo here-->
-            </label>        
+            </label>
           </div> <!-- /radio-wrapper-->
         </div>
          <!-- //hidden-->
@@ -48,10 +52,10 @@ const preShippingMethodSelectionHtml = `
             </div>
             <label for="other-delivery">
               <span class="radio__label">Dostawa pod wskazany adres</span>
-            </label>        
+            </label>
           </div> <!-- /radio-wrapper-->
         </div>
-      
+
       </div>
     </div>
   </div>
@@ -74,11 +78,9 @@ const mapHtml = `
 `;
 
 const $contactInformation = $('.step__sections .section--contact-information');
-const $submitButton = $('button[type="submit"]').attr('disabled', true);
+const $submitButton = $('button[type="submit"]');
 const $submitButtonDefaultLabel = $submitButton.children('span');
-const $submitButtonPaczkomatyLabelHtml = $(`<span>Potwierdź sposób dostawy</span>`)
-  .hide()
-  .appendTo($submitButton);
+const $submitButtonPaczkomatyLabelHtml = $(`<span>Potwierdź sposób dostawy</span>`);
 const $sectionOptional = $('.section--optional');
 
 
@@ -86,7 +88,10 @@ const $sectionOptional = $('.section--optional');
  * Starting point of contact information page
  */
 export function runContactInformation() {
+
   //html modifications
+  $submitButton.attr('disabled', true);
+  $submitButtonPaczkomatyLabelHtml.hide().appendTo($submitButton);
   const $preShippingMethodSelection = $(preShippingMethodSelectionHtml);
   const $map = $(mapHtml).hide();
   addressSection.hide();
@@ -99,19 +104,17 @@ export function runContactInformation() {
   const $radioOther = $('#' + otherDeliveryButtonId);
   const $preShippingSection = $('.' + sectionPreShippingMethodClass);
 
+  //submit button
+  $submitButton.click((e)=> {
+    const personalInfo = PersonalInfo.fromFirstStepFrom($('form'));
+    window.sessionStorage.setItem(STORAGE_PERSONAL_INFO, JSON.stringify(personalInfo));
+  });
+
   /**
    * @type {Map}
    */
   let map = null;
-  initGoogleMaps().then(_map=> {
-    map = _map;
-    $radioPaczkomat.attr('disabled', false);
-    map.onPaczkomatSelected(selectPaczkomat);
-    map.loadMarkers().then(()=> {
-      $mapLoadingIndicator.hide();
-    });
-  });
-
+  let mapInitializing = false;
   //register change events for radio buttons
   [$radioPaczkomat, $radioOther].forEach(($element)=> {
     $element.change(()=> {
@@ -134,8 +137,26 @@ export function runContactInformation() {
     $submitButtonPaczkomatyLabelHtml.show();
     $map.show();
     if (map) {
-      map.createMarkers();
       map.checkResize();
+    } else {
+      if (mapInitializing) {
+        return;
+      }
+      mapInitializing = true;
+      initGoogleMaps().then(_map=> {
+        map = _map;
+        $radioPaczkomat.attr('disabled', false);
+        map.onPaczkomatSelected(selectPaczkomat);
+        map.createMarkers().then(()=> {
+          paczkomatySelect.init({
+            $insertBefore: $('#' + mapContainerId),
+            map: map,
+            onSelect: selectPaczkomat
+          });
+          $mapLoadingIndicator.hide();
+        });
+        mapInitializing = false;
+      });
     }
 
     // selectPaczkomat(new Paczkomat({
@@ -179,7 +200,7 @@ export function runContactInformation() {
    * @param {Paczkomat} paczkomat
    */
   function selectPaczkomat(paczkomat) {
-    window.sessionStorage.setItem(STORAGE_PACZKOMATY_KEY, paczkomat);
+    window.sessionStorage.setItem(STORAGE_PACZKOMATY_KEY, JSON.stringify(paczkomat));
     //[$radioPaczkomat, $radioOther].forEach(($item)=>$item.attr('disabled', true));
     const $createPaczkomatSection = createPaczkomatInfOSection({
       paczkomat,
@@ -200,7 +221,6 @@ export function runContactInformation() {
 
 
 /**
- * @param {InpostApi} apiInpost
  * @returns {Promise.<Map>}
  */
 function initGoogleMaps() {
@@ -208,8 +228,8 @@ function initGoogleMaps() {
   const deferred = $.Deferred();
   const initFunctionName = 'initMap';
   //@todo get lat and long from external source
-  const lat = 51.106;
-  const lng = 17.016;
+  const lat = 52.07701703390396;
+  const lng = 19.515917968750042;
 
   $('body').append(`<script src="https://maps.googleapis.com/maps/api/js?key=${GOOGLE_API_KEY}&callback=${initFunctionName}" async defer></script>`);
 
@@ -226,5 +246,3 @@ function initGoogleMaps() {
 
   return deferred;
 }
-
-

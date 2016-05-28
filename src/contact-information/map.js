@@ -9,7 +9,7 @@ const initInfoWindowContentEvents = Symbol();
 const infoWindowCSSClass = 'map__info-window';
 const infoWindowLinkCSSClass = infoWindowCSSClass + '-link';
 
-MarkerClusterer.prototype.MARKER_CLUSTER_IMAGE_PATH_ = 'images/cluster-marker/m';
+MarkerClusterer.prototype.MARKER_CLUSTER_IMAGE_PATH_ = 'https://chmurson.github.io/shopify/images/cluster-marker/m';
 
 export class Map {
 
@@ -28,9 +28,16 @@ export class Map {
     this.infoWindow = new google.maps.InfoWindow();
     this.googleMap = new google.maps.Map(this.conatiner, {
       center: {lat: lat, lng: lng},
-      zoom: 11,
+      zoom: 5,
       disableDefaultUI: true
     });
+
+    setInterval(()=> {
+      console.log({
+        center: this.googleMap.getCenter().toJSON(),
+        zoom: this.googleMap.getZoom()
+      })
+    }, 2000);
 
 
     this[initInfoWindowContentEvents]();
@@ -47,6 +54,15 @@ export class Map {
       .getPaczkomaty()
       .then((paczkomaty)=> paczkomaty.map(p=> this[createMarker](p)))
       .then((markers)=> this.markers = markers)
+  }
+
+  /**
+   * @param lng
+   * @param lat
+   */
+  center(lng, lat) {
+    this.googleMap.setCenter({lng: Number.parseFloat(lng), lat: Number.parseFloat(lat)});
+    this.googleMap.setZoom(11);
   }
 
   /**
@@ -119,4 +135,7 @@ export class Map {
 
 }
 
-
+/**
+ * @type {InpostApi}
+ */
+Map.prototype.apiInpost = null;

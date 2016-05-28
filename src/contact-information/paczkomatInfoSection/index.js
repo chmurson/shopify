@@ -11,7 +11,7 @@ const changeLinkClass = `${paczkomatInfoSectionChangeClass}-link`;
  * @param {Function} onSelectDifferentPaczkomat
  * @returns {*|jQuery}
  */
-export default function createPaczkomatInfOSection({paczkomat, onSelectDifferentPaczkomat}) {
+export default function createPaczkomatInfoSection({paczkomat, onSelectDifferentPaczkomat}) {
   return $(`
       <div class="section ${paczkomatInfoSectionClass}">
         <div class="section__header">

@@ -27,6 +27,11 @@ export class Paczkomat {
 /**
  * @type {string}
  */
+Paczkomat.prototype.name = '';
+
+/**
+ * @type {string}
+ */
 Paczkomat.prototype.street = '';
 
 /**

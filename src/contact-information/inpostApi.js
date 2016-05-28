@@ -11,7 +11,7 @@ export class InpostApi {
 
   loadPaczkomaty() {
     if (!this.loadingPromise) {
-      return this.loadingPromise = $.when($.ajax("http://api.paczkomaty.pl/?do=listmachines_xml"))
+      return this.loadingPromise = $.when($.ajax("https://api.paczkomaty.pl/?do=listmachines_xml"))
         .then((data, textStatus, jqXHR) => {
           return parseXmlToJs(data);
         })
@@ -26,6 +26,9 @@ export class InpostApi {
     return this.loadingPromise;
   }
 
+  /**
+   * @returns {Promise.<Paczkomat[]>}
+   */
   getPaczkomaty() {
     if (this.paczkomaty === undefined) {
       return this.loadPaczkomaty();

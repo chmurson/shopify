@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "build": "rm -rf build\\* && npm run copy-assets && webpack",
+    "build-prod": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --progress --colors --watch",
     "start-http-server": "http-server ./build",
