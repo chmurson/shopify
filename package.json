@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "rm -rf build\\* && npm run copy-assets && webpack",
-    "build-prod": "webpack -p",
+    "pre-build": "rm -rf build\\* && npm run copy-assets",
+    "build": "npm run pre-build && webpack",
+    "build-prod": "npm run pre-build && webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --progress --colors --watch",
     "start-http-server": "http-server ./build",
     "copy-assets": "cp -R assets/ build && npm run copy-marker-cluster-assets",
-    "copy-marker-cluster-assets" : "cp -R node_modules/js-marker-clusterer/images build/images/cluster-marker"
+    "copy-marker-cluster-assets": "cp -R node_modules/js-marker-clusterer/images build/images/cluster-marker",
+    "deploy": "npm run build-prod && ./gh-deploy.sh"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +29,7 @@
     "jquery": "1.x",
     "js-marker-clusterer": "github:googlemaps/js-marker-clusterer#gh-pages",
     "lodash": "^4.11.2",
+    "selectize": "^0.12.1",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.4",
     "stylus-loader": "^2.0.0",
