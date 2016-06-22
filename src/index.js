@@ -6,21 +6,28 @@ import {runContactInformation} from './contact-information/index';
 import {runShippingMethod} from './shipping-method/index';
 
 const stepToFile = {
-  'shipping_method': runContactInformation,
-  'payment_method':  runShippingMethod
+  'contact_information': runContactInformation,
+  'shipping_method': runShippingMethod
 };
 
-const step = $('input[name="step"]').val();
+const $step = $('.step');
+const stepId = $step.attr('data-step');
 
 
-
-setTimeout(()=>{
-  if (stepToFile[step]) {
-    stepToFile[step]();
-  }else{
+setTimeout(()=> {
+  if (stepToFile[stepId]) {
+    stepToFile[stepId]();
+    turnOffDefaultLoadingScreen(stepId);
+  } else {
 
   }
-},2500);
+}, 2500);
 
+/**
+ * turn off default css loading screen
+ */
+function turnOffDefaultLoadingScreen() {
+  $step.addClass('loaded');
+}
 
 

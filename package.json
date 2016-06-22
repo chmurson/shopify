@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "pre-build": "rm -rf build\\* && npm run copy-assets",
+    "pre-build": "rm -rf build\\* && npm run copy-assets && npm run build-extra-css",
+
     "build": "npm run pre-build && webpack",
     "build-prod": "npm run pre-build && webpack -p",
+
+    "build-extra-css": "stylus src/extra.styl -o build/",
+
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --progress --colors --watch",
+
+    "watch": "parallelshell \"npm run watch-webpack\" \"npm run watch-extra-css\"",
+    "watch-webpack": "webpack --progress --colors --watch",
+    "watch-extra-css": "stylus src/extra.styl -o build/ -w",
+
     "start-http-server": "http-server ./build",
     "copy-assets": "cp -R assets/ build && npm run copy-marker-cluster-assets",
     "copy-marker-cluster-assets": "cp -R node_modules/js-marker-clusterer/images build/images/cluster-marker",
-    "deploy": "npm run build-prod && ./gh-deploy.sh"
+    "deploy": "npm run build-prod && rm -rf build/*.map && ./gh-deploy.sh"
   },
   "author": "",
   "license": "ISC",
@@ -29,6 +37,7 @@
     "jquery": "1.x",
     "js-marker-clusterer": "github:googlemaps/js-marker-clusterer#gh-pages",
     "lodash": "^4.11.2",
+    "parallelshell": "^2.0.0",
     "selectize": "^0.12.1",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.4",
