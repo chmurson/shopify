@@ -1,0 +1,32 @@
+.step[data-step="shipping_method"],
+.step[data-step="contact_information"] {
+  position: relative;
+}
+.step[data-step="shipping_method"]:before,
+.step[data-step="contact_information"]:before {
+  content: "Ładowanie...";
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 200px;
+}
+.step[data-step="shipping_method"] > form,
+.step[data-step="contact_information"] > form {
+  visibility: hidden;
+}
+.step[data-step="shipping_method"].loaded,
+.step[data-step="contact_information"].loaded {
+  position: inherit;
+}
+.step[data-step="shipping_method"].loaded:before,
+.step[data-step="contact_information"].loaded:before {
+  content: "";
+  top: 0;
+}
+.step[data-step="shipping_method"].loaded > form,
+.step[data-step="contact_information"].loaded > form {
+  visibility: visible;
+}
