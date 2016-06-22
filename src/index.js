@@ -29,5 +29,3 @@ setTimeout(()=> {
 function turnOffDefaultLoadingScreen() {
   $step.addClass('loaded');
 }
-
-

@@ -62,16 +62,23 @@ function performChangesForSelectedPaczkomat(paczkomat) {
   const $personalInfoSection = createPersonalSection(getPersonalInfo()).insertAfter($paczkomatInfoSection);
 
   $shippingMethod.find('.content-box__row').hide();
-  $shippingMethod.find(`input[value="${PACZKOMAT_SHIPPING_METHOD_1_VALUE}"]`).closest('.content-box__row').show();
-  $shippingMethod.find(`input[value="${PACZKOMAT_SHIPPING_METHOD_2_VALUE}"]`).closest('.content-box__row').show();
+  getAllContentsBoxRowOfPaczkomaty().show();
   $shippingMethod.find('.content-box__row:hidden').remove();
 }
 
 function performChangesForNotSelectedPaczkomat() {
   $shippingMethod.find('.content-box__row').show();
-  $shippingMethod.find(`input[value="${PACZKOMAT_SHIPPING_METHOD_1_VALUE}"]`).closest('.content-box__row').hide();
-  $shippingMethod.find(`input[value="${PACZKOMAT_SHIPPING_METHOD_2_VALUE}"]`).closest('.content-box__row').hide();
+  getAllContentsBoxRowOfPaczkomaty().hide();
   $shippingMethod.find('.content-box__row:hidden').remove();
 }
 
+function getAllContentsBoxRowOfPaczkomaty(){
+  return $shippingMethod
+    .find('.input-radio')
+    .filter((key,input)=> {
+      return ((input.value || '').search('Paczkomat')) !== -1;
+    })
+    .closest('.content-box__row')
+    .show();
+}
 

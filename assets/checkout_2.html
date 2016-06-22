@@ -552,12 +552,11 @@ console.log('test');
           }
           analytics.async = true;
           analytics.src = "https://cdn.shopify.com/s/javascripts/trekkie.storefront.min.js?v=" + trekkie_version;
-          document.getElementsByTagName('head')[0].appendChild(analytics);
           
       var eventsListenerScript = document.createElement('script');
       eventsListenerScript.async = true;
       eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-3b50450e2c1e38d8cd9e23464e6413863a761358c065b555f9e82d9eef784080.js";
-      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
     
         })();
       </script>
