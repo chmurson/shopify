@@ -1,5 +1,5 @@
 import $ from 'jquery';
-
+import Cookies from 'cookies-js';
 
 import {GOOGLE_API_KEY, STORAGE_PACZKOMATY_KEY, STORAGE_PERSONAL_INFO} from './../config';
 
@@ -107,7 +107,7 @@ export function runContactInformation() {
   //submit button
   $submitButton.click((e)=> {
     const personalInfo = PersonalInfo.fromFirstStepFrom($('form'));
-    window.sessionStorage.setItem(STORAGE_PERSONAL_INFO, JSON.stringify(personalInfo));
+    Cookies.set(STORAGE_PERSONAL_INFO, JSON.stringify(personalInfo));
   });
 
   /**
@@ -191,7 +191,7 @@ export function runContactInformation() {
   }
 
   function clearSelectedPaczkomat() {
-    window.sessionStorage.setItem(STORAGE_PACZKOMATY_KEY, undefined);
+    Cookies.set(STORAGE_PACZKOMATY_KEY, undefined);
     $(`.${paczkomatInfoSectionClass}`).remove();
     addressSection.hide();
   }
@@ -200,7 +200,7 @@ export function runContactInformation() {
    * @param {Paczkomat} paczkomat
    */
   function selectPaczkomat(paczkomat) {
-    window.sessionStorage.setItem(STORAGE_PACZKOMATY_KEY, JSON.stringify(paczkomat));
+    Cookies.set(STORAGE_PACZKOMATY_KEY, JSON.stringify(paczkomat));
     //[$radioPaczkomat, $radioOther].forEach(($item)=>$item.attr('disabled', true));
     const $createPaczkomatSection = createPaczkomatInfOSection({
       paczkomat,

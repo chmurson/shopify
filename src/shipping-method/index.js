@@ -1,8 +1,14 @@
 import $ from 'jquery'
 import {Paczkomat}from  './../contact-information/paczkomat';
 import PersonalInfo from './../common/PersonalInfo';
+import Cookies from 'cookies-js';
 
-import {STORAGE_PACZKOMATY_KEY, STORAGE_PERSONAL_INFO, PACZKOMAT_SHIPPING_METHOD_1_VALUE, PACZKOMAT_SHIPPING_METHOD_2_VALUE} from './../config';
+import {
+  STORAGE_PACZKOMATY_KEY,
+  STORAGE_PERSONAL_INFO,
+  PACZKOMAT_SHIPPING_METHOD_1_VALUE,
+  PACZKOMAT_SHIPPING_METHOD_2_VALUE
+} from './../config';
 
 import createPaczkomatInfoSection from './../contact-information/paczkomatInfoSection/index';
 import {createPersonalSection} from './personalnfoSection';
@@ -13,6 +19,14 @@ const $shippingMethod = $('.section--shipping-method');
  * Starting logic for shipping_method page
  */
 export function runShippingMethod() {
+  const personalInfo = getPersonalInfo();
+  if (!personalInfo) {
+    //if no personal info, it means there are lack of proper data we can build this page on so let's navigate user
+    //back to contact information page
+    window.location.href = window.location.href.replace(/\?(.)*/, '') + '?step=contact_information';
+  }
+
+
   const paczkomat = getPaczkomat();
 
   if (paczkomat) {
@@ -26,8 +40,8 @@ export function runShippingMethod() {
  * @returns {undefined|Paczkomat}
  */
 function getPaczkomat() {
-  const serializedPaczkomat = window.sessionStorage.getItem(STORAGE_PACZKOMATY_KEY);
-  if (!serializedPaczkomat){
+  const serializedPaczkomat = Cookies.get(STORAGE_PACZKOMATY_KEY);
+  if (!serializedPaczkomat) {
     return undefined;
   }
   try {
@@ -41,10 +55,14 @@ function getPaczkomat() {
  * @returns {*|PersonalInfo}
  */
 function getPersonalInfo() {
+  const serializedPersonalInfo = Cookies.get(STORAGE_PACZKOMATY_KEY);
+  if (!serializedPersonalInfo) {
+    return undefined;
+  }
   try {
-    return Object.assign(new PersonalInfo(), JSON.parse(window.sessionStorage.getItem(STORAGE_PERSONAL_INFO)));
+    return Object.assign(new PersonalInfo(), JSON.parse(Cookies.get(STORAGE_PERSONAL_INFO)));
   } catch (e) {
-    return {};
+    return undefined;
   }
 }
 
@@ -59,7 +77,7 @@ function performChangesForSelectedPaczkomat(paczkomat) {
     }
   }).insertAfter($shippingSectionRecap);
 
-  const $personalInfoSection = createPersonalSection(getPersonalInfo()).insertAfter($paczkomatInfoSection);
+  createPersonalSection(getPersonalInfo()).insertAfter($paczkomatInfoSection);
 
   $shippingMethod.find('.content-box__row').hide();
   getAllContentsBoxRowOfPaczkomaty().show();
@@ -72,10 +90,10 @@ function performChangesForNotSelectedPaczkomat() {
   $shippingMethod.find('.content-box__row:hidden').remove();
 }
 
-function getAllContentsBoxRowOfPaczkomaty(){
+function getAllContentsBoxRowOfPaczkomaty() {
   return $shippingMethod
     .find('.input-radio')
-    .filter((key,input)=> {
+    .filter((key, input)=> {
       return ((input.value || '').search('Paczkomat')) !== -1;
     })
     .closest('.content-box__row')
