@@ -1,0 +1,1 @@
+This code here should be injected directly to shopify admin screen.

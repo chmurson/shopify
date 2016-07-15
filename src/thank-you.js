@@ -10,14 +10,20 @@ import {startOrderFetching} from './pay-u';
 
 
 if (window.OrderStatus.gateway === PAY_U_GATWAY) {
+  processPayUOrder();
+} else {
+  turnOffDefaultLoadingScreen();
+}
+
+window.OrderStatus.processPayUOrder = processPayUOrder;
+
+function processPayUOrder() {
   const checkout_token = (IS_DEV) ? "3e0f37899697a97a064efc983b653196" : Shopify.checkout.token;
   const showOrderInfoWithCheckoutToken = (order)=>showOrderInfo(checkout_token, order);
   startOrderFetching(checkout_token)
     .then(showOrderInfoWithCheckoutToken)
     .catch(showOrderLoadError)
     .then(turnOffDefaultLoadingScreen);
-} else {
-  turnOffDefaultLoadingScreen();
 }
 
 
