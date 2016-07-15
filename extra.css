@@ -1,9 +1,13 @@
 .step[data-step="shipping_method"],
-.step[data-step="contact_information"] {
+.step[data-step="contact_information"],
+.step[data-step="payment_method"],
+.page--thank-you .main__content > .section > .section__content {
   position: relative;
 }
 .step[data-step="shipping_method"]:before,
-.step[data-step="contact_information"]:before {
+.step[data-step="contact_information"]:before,
+.step[data-step="payment_method"]:before,
+.page--thank-you .main__content > .section > .section__content:before {
   content: "Ładowanie...";
   font-size: 1.5em;
   display: block;
@@ -13,20 +17,31 @@
   right: 0;
   top: 200px;
 }
-.step[data-step="shipping_method"] > form,
-.step[data-step="contact_information"] > form {
+.step[data-step="shipping_method"] > *,
+.step[data-step="contact_information"] > *,
+.step[data-step="payment_method"] > *,
+.page--thank-you .main__content > .section > .section__content > * {
   visibility: hidden;
 }
 .step[data-step="shipping_method"].loaded,
-.step[data-step="contact_information"].loaded {
+.step[data-step="contact_information"].loaded,
+.step[data-step="payment_method"].loaded,
+.page--thank-you .main__content > .section > .section__content.loaded {
   position: inherit;
 }
 .step[data-step="shipping_method"].loaded:before,
-.step[data-step="contact_information"].loaded:before {
+.step[data-step="contact_information"].loaded:before,
+.step[data-step="payment_method"].loaded:before,
+.page--thank-you .main__content > .section > .section__content.loaded:before {
   content: "";
   top: 0;
 }
-.step[data-step="shipping_method"].loaded > form,
-.step[data-step="contact_information"].loaded > form {
+.step[data-step="shipping_method"].loaded > *,
+.step[data-step="contact_information"].loaded > *,
+.step[data-step="payment_method"].loaded > *,
+.page--thank-you .main__content > .section > .section__content.loaded > * {
   visibility: visible;
+}
+.os-step__title.error {
+  color: #f00;
 }
