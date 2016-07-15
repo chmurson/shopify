@@ -44,7 +44,7 @@ function parseXmlToJs(xml) {
     if (err) {
       return deferred.reject(err)
     }
-    const paczkomaty = _.get(result, 'paczkomaty.machine') || [];
+    const paczkomaty = (result.paczkomaty && result.paczkomaty.machine) ? result.paczkomaty.machine : [];
     //fix structure of paczkomats objects
     const fixedPaczkomaty = paczkomaty.map((paczkomat)=> {
       const fixedObject = {};

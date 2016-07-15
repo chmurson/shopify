@@ -16,13 +16,13 @@ const $element = $('<select placeholder="Znajdź paczkomat..."><option value="">
  */
 function init({map, $insertBefore, onSelect}) {
   map.apiInpost.getPaczkomaty().then(paczkomaty=> {
-    compose()
-      map((paczkomat)=> {
+    paczkomaty
+      .map((paczkomat)=> {
         return $(`<option value="${paczkomat.name}">${paczkomat.town}, ${paczkomat.shortAddress}</option>`)
       })
-      .each(($p)=> {
+      .forEach(($p)=> {
         return $element.append($p)
-      })(paczkomaty);
+      });
 
     $element.insertBefore($insertBefore);
 
@@ -30,7 +30,9 @@ function init({map, $insertBefore, onSelect}) {
       sortField: 'text',
       maxOptions: 20,
       maxItems: 1,
-      onChange: _.curry(onChange)(map, onSelect)
+      onChange: function (value) {
+        onChange(map, onSelect, value);
+      }
     });
   });
 }
@@ -48,7 +50,7 @@ function onChange(map, onSelect, value) {
   map.apiInpost.getPaczkomaty().then(paczkomaty=> {
     const selectedPaczkomat = _.find(paczkomaty, {name: value});
     if (selectedPaczkomat) {
-      map.center(selectedPaczkomat.longitude,selectedPaczkomat.latitude);
+      map.center(selectedPaczkomat.longitude, selectedPaczkomat.latitude);
       onSelect(selectedPaczkomat);
     }
   });

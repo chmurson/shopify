@@ -6,7 +6,7 @@ ga('require', 'displayfeatures');
   }
   var head = document.getElementsByTagName('head')[0];
 
-  loadCss("https://chmurson.github.io/shopify/extra.css?_h=2");
+  loadCss("https://chmurson.github.io/shopify/extra.css?_h=10");
   loadScript("https://chmurson.github.io/shopify/hotjar.js?_h=2");
   loadScript("https://chmurson.github.io/shopify/init.bundle.js?_h=10");
   loadScript("https://chmurson.github.io/shopify/index.bundle.js?_h=10");
