@@ -1,2 +1,7 @@
 build
 node_modules
+server/*.js
+server/*.js.map
+.idea/workspace.xml
+
+src/env-config.js

@@ -1,11 +1,20 @@
+var webpack = require('webpack');
 var path = require('path');
 var BellOnBundlerErrorPlugin = require('bell-on-bundler-error-plugin');
+var LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/index.js",
+    "thank-you": "./src/thank-you.js",
+    "error-handler": "./src/error-handler.js"
+  },
   output: {
     path: path.join(__dirname, 'build'),
-    filename: "bundle.js"
+    filename: "[name].bundle.js"
+  },
+  externals: {
+    'jquery': 'Checkout.$'
   },
   module: {
     loaders: [
@@ -22,11 +31,27 @@ module.exports = {
       {
         test: /\.html$/,
         loader: "html"
+      }, {
+        'loader': 'babel-loader',
+        'test': /\.js$/,
+        'exclude': /node_modules/,
+        'query': {
+          'plugins': ['lodash'],
+          'presets': ['es2015']
+        }
       }
     ]
   },
   plugins: [
-    new BellOnBundlerErrorPlugin()
+    new LodashModuleReplacementPlugin(),
+    new BellOnBundlerErrorPlugin(),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "init",
+      chunks: ['index', 'thank-you']
+    }),
+    new webpack.DefinePlugin({
+
+    })
   ],
   devtool: 'source-map'
 };

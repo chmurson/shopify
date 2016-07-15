@@ -26,7 +26,6 @@ export function runShippingMethod() {
     window.location.href = window.location.href.replace(/\?(.)*/, '') + '?step=contact_information';
   }
 
-
   const paczkomat = getPaczkomat();
 
   if (paczkomat) {
@@ -99,4 +98,3 @@ function getAllContentsBoxRowOfPaczkomaty() {
     .closest('.content-box__row')
     .show();
 }
-

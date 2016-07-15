@@ -2,6 +2,7 @@ import {InpostApi} from './inpostApi'
 import selectize from 'selectize';
 import $ from 'jquery';
 import _ from 'lodash';
+import compose from 'lodash/fp/compose';
 
 import 'selectize/dist/css/selectize.css';
 
@@ -15,14 +16,13 @@ const $element = $('<select placeholder="Znajdź paczkomat..."><option value="">
  */
 function init({map, $insertBefore, onSelect}) {
   map.apiInpost.getPaczkomaty().then(paczkomaty=> {
-    _
-      .chain(paczkomaty)
-      .map((paczkomat)=> {
+    compose()
+      map((paczkomat)=> {
         return $(`<option value="${paczkomat.name}">${paczkomat.town}, ${paczkomat.shortAddress}</option>`)
       })
       .each(($p)=> {
         return $element.append($p)
-      }).value();
+      })(paczkomaty);
 
     $element.insertBefore($insertBefore);
 

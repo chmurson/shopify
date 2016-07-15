@@ -1,4 +1,7 @@
-.step[data-step="shipping_method"], .step[data-step="contact_information"] {
+.step[data-step="shipping_method"],
+.step[data-step="contact_information"],
+.step[data-step="payment_method"],
+.page--thank-you .main__content > .section > .section__content{
   position relative
 
   &:before {
@@ -12,7 +15,7 @@
     top: 200px;
   }
 
-  > form {
+  > * {
     visibility hidden
   }
 
@@ -24,8 +27,12 @@
       top 0
     }
 
-    > form {
+    > * {
       visibility visible
     }
   }
+}
+
+.os-step__title.error{
+  color: red;
 }
