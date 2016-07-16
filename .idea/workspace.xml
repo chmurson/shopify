@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89e19469-14d4-46dc-9e88-7561d364f1e9" name="Default" comment="expose procesPayUOrder on window object">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vendor.js" />
+    <list default="true" id="89e19469-14d4-46dc-9e88-7561d364f1e9" name="Default" comment="fixed selecting paczkomat">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/satelite/addtional-thank-you.js" afterPath="$PROJECT_DIR$/src/satelite/addtional-thank-you.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/contact-information/index.js" afterPath="$PROJECT_DIR$/src/contact-information/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/contact-information/inpostApi.js" afterPath="$PROJECT_DIR$/src/contact-information/inpostApi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/contact-information/paczkomat.js" afterPath="$PROJECT_DIR$/src/contact-information/paczkomat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/contact-information/paczkomatSelect.js" afterPath="$PROJECT_DIR$/src/contact-information/paczkomatSelect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pay-u/index.js" afterPath="$PROJECT_DIR$/src/pay-u/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/thank-you.js" afterPath="$PROJECT_DIR$/src/thank-you.js" />
     </list>
     <ignored path="shopify-glassify-checkout-paczkomaty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +26,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="inpostApi.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addtional-thank-you.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/satelite/addtional-thank-you.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thank-you.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/thank-you.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="e#43#66#0" expanded="true" />
+                <marker date="1468661370000" expanded="true" signature="2908:3146" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inpostApi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/contact-information/inpostApi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
+            <state relative-caret-position="464">
               <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -43,23 +61,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pay-u/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/satelite/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="90">
+                <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="64" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="adittional-ga-js.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/satelite/adittional-ga-js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="11" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -85,26 +107,6 @@
               <folding>
                 <element signature="e#14#36#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="paczkomat.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/contact-information/paczkomat.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DOMCore.js" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="503" column="0" selection-start-line="503" selection-start-column="0" selection-end-line="503" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -175,7 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/config.dev.js" />
         <option value="$PROJECT_DIR$/src/config.prod.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -211,11 +212,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_12" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-end.ts" />
         <option value="$PROJECT_DIR$/server/config.ts" />
-        <option value="$PROJECT_DIR$/src/satelite/addtional-thank-you.js" />
         <option value="$PROJECT_DIR$/server/routes/index.ts" />
         <option value="$PROJECT_DIR$/server/index.ts" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-start.ts" />
-        <option value="$PROJECT_DIR$/src/thank-you.js" />
         <option value="$PROJECT_DIR$/src/satelite/README.md" />
         <option value="$PROJECT_DIR$/src/satelite/adittional-ga-js.js" />
         <option value="$PROJECT_DIR$/src/contact-information/paczkomat.js" />
@@ -226,6 +225,9 @@
         <option value="$PROJECT_DIR$/src/contact-information/paczkomatSelect.js" />
         <option value="$PROJECT_DIR$/src/contact-information/index.js" />
         <option value="$PROJECT_DIR$/src/contact-information/inpostApi.js" />
+        <option value="$PROJECT_DIR$/src/satelite/addtional-thank-you.js" />
+        <option value="$PROJECT_DIR$/src/satelite/addtional-thank-you.html" />
+        <option value="$PROJECT_DIR$/src/thank-you.js" />
       </list>
     </option>
   </component>
@@ -295,6 +297,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopify-glassify-checkout-paczkomaty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopify-glassify-checkout-paczkomaty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="satelite" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,7 +461,7 @@
       <updated>1468145477839</updated>
       <workItem from="1468145479513" duration="3133000" />
       <workItem from="1468150277647" duration="28479000" />
-      <workItem from="1468615442153" duration="3504000" />
+      <workItem from="1468615442153" duration="3972000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1468151998150</created>
@@ -492,11 +512,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468592189835</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed selecting paczkomat">
+      <created>1468660333064</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1468660333064</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36793000" />
+    <option name="totallyTimeSpent" value="37261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1046" extended-state="6" />
@@ -506,10 +533,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809225" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32809225" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24954791" sideWeight="0.51170045" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39539748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -537,7 +564,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="expose procesPayUOrder on window object" />
-    <option name="LAST_COMMIT_MESSAGE" value="expose procesPayUOrder on window object" />
+    <MESSAGE value="fixed selecting paczkomat" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed selecting paczkomat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -744,46 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/thank-you.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#43#66#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/satelite/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/satelite/addtional-thank-you.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/satelite/adittional-ga-js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="64" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -902,10 +890,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/contact-information/inpostApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
+        <state relative-caret-position="464">
           <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/satelite/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="64" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/satelite/adittional-ga-js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="11" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/satelite/addtional-thank-you.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thank-you.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#43#66#0" expanded="true" />
+            <marker date="1468661370000" expanded="true" signature="2908:3146" placeholder="..." />
           </folding>
         </state>
       </provider>

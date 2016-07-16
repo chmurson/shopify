@@ -9,7 +9,7 @@ import 'jquery-deparam';
 import {startOrderFetching} from './pay-u';
 
 
-if (window.OrderStatus.gateway === PAY_U_GATWAY) {
+if ((window.OrderStatus && window.OrderStatus.gateway) === PAY_U_GATWAY) {
   processPayUOrder();
 } else {
   turnOffDefaultLoadingScreen();
