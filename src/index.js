@@ -2,6 +2,8 @@
 import './index.styl';
 import $ from 'jquery';
 
+import './vendor';
+
 import {runContactInformation} from './contact-information/index';
 import {runShippingMethod} from './shipping-method/index';
 import {runPaymentMethodChanges} from './payment-method/index';

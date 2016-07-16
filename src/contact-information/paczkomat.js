@@ -1,10 +1,6 @@
-import _ from 'lodash';
-
 export class Paczkomat {
   constructor(data) {
-    _.each(data, (value, key)=> {
-      this[key] = value;
-    });
+    Object.assign(this, data);
   }
 
   get address() {

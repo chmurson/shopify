@@ -150,7 +150,7 @@ export function runContactInformation() {
         map.createMarkers().then(()=> {
           paczkomatySelect.init({
             $insertBefore: $('#' + mapContainerId),
-            map: map,
+            paczkomatyMap: map,
             onSelect: selectPaczkomat
           });
           $mapLoadingIndicator.hide();

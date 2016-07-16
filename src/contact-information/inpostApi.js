@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import xml2js from 'xml2js';
-import _ from 'lodash';
 import {Paczkomat} from './paczkomat';
 
 export class InpostApi {
@@ -48,8 +47,9 @@ function parseXmlToJs(xml) {
     //fix structure of paczkomats objects
     const fixedPaczkomaty = paczkomaty.map((paczkomat)=> {
       const fixedObject = {};
-      _.each(paczkomat, (value, key)=> {
-        if (!_.isArray(value)) {
+      Object.keys(paczkomat).forEach((key)=> {
+        const value = paczkomat[key];
+        if (!Array.isArray(value)) {
           fixedObject[key] = value;
         } else {
           fixedObject[key] = value[0];

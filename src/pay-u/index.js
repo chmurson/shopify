@@ -1,7 +1,6 @@
 import $ from 'jquery';
 import {BACKEND_URL} from './../env-config'
 import {maxAttemptNumber, getOrderTimeoutBeforeNextAttempt, PAY_U_GATWAY} from './config';
-import _ from 'lodash';
 
 /**
  * @param orderNumber
@@ -50,7 +49,7 @@ export function startOrderFetching(orderNumber) {
 
 export class Order {
   constructor(data) {
-    _.assign(this, data);
+    Object.assign(this, data);
   }
 
   get isPayU() {
