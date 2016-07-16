@@ -15,7 +15,7 @@ if ((window.OrderStatus && window.OrderStatus.gateway) === PAY_U_GATWAY) {
   turnOffDefaultLoadingScreen();
 }
 
-window.OrderStatus.processPayUOrder = processPayUOrder;
+window.processPayUOrder = processPayUOrder;
 
 function processPayUOrder() {
   const checkout_token = (IS_DEV) ? "3e0f37899697a97a064efc983b653196" : Shopify.checkout.token;
