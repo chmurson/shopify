@@ -34,11 +34,7 @@ export function startOrderFetching(orderNumber) {
       }
       getOrder(orderNumber)
         .then(order=> {
-          if (order) {
-            resolve(order)
-          } else {
-            setTimeout(()=>_getOrderAttempt(), getOrderTimeoutBeforeNextAttempt);
-          }
+          resolve(order)
         }, ()=> {
           setTimeout(()=>_getOrderAttempt(), getOrderTimeoutBeforeNextAttempt);
         })
@@ -49,6 +45,8 @@ export function startOrderFetching(orderNumber) {
 
 export class Order {
   constructor(data) {
+    this.checkout_token = null;
+    this.gateway = null;
     Object.assign(this, data);
   }
 
@@ -56,13 +54,11 @@ export class Order {
     return this.gateway === PAY_U_GATWAY;
   }
 
-  get isPaymentDone(){
+  get isPaymentDone() {
     return (this.payU) && (this.payU.isSuccess !== undefined);
   }
 
   get isPaymentSuccesufl() {
     return (this.payU) && (this.payU.isSuccess === true);
   }
-
-
 }

@@ -14,12 +14,10 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
   //@todo here should be API verification
   const document = req.body;
 
-  if (!document.id) {
-    res.status(400).json(createFailureJson("Document has no id"));
+  if (!document.checkout_token) {
+    res.status(400).json(createFailureJson("Document has no checkout_token"));
   }
 
-  insertOrUpdateDocument(ORDERS_COLLECTION_NAME, document, 'id');
+  insertOrUpdateDocument(ORDERS_COLLECTION_NAME, document, 'checkout_token');
   res.json(createSuccessJson());
 }
-
-export const nothing = {};

@@ -2,36 +2,33 @@
  * Created by wpiat on 03.07.2016.
  */
 import $ from 'jquery';
-import {IS_DEV, BACKEND_URL} from './env-config';
-import {PAY_U_GATWAY} from './pay-u/config';
+import {BACKEND_URL} from './env-config';
 import 'jquery-deparam';
 
 import {startOrderFetching} from './pay-u';
 
+processOrder();
 
-if ((window.OrderStatus && window.OrderStatus.gateway) === PAY_U_GATWAY) {
-  processPayUOrder();
-} else {
-  turnOffDefaultLoadingScreen();
-}
+function processOrder() {
+  const checkout_token = Shopify.checkout.token;
 
-window.processPayUOrder = processPayUOrder;
-
-function processPayUOrder() {
-  const checkout_token = (IS_DEV) ? "3e0f37899697a97a064efc983b653196" : Shopify.checkout.token;
-  const showOrderInfoWithCheckoutToken = (order)=>showOrderInfo(checkout_token, order);
   startOrderFetching(checkout_token)
-    .then(showOrderInfoWithCheckoutToken)
+    .then(showOrderInfo)
     .catch(showOrderLoadError)
     .then(turnOffDefaultLoadingScreen);
 }
 
 
 /**
+ * @param string checkout_token
  * @param {Order} order
  */
-function showOrderInfo(checkout_token, order) {
+function showOrderInfo(order) {
   const error = hasOrderAnError(order);
+  const checkout_token = order.checkout_token;
+  if (order.isPayU === false) {
+    return; //do nothing if it's not PayU
+  }
   if (order.isPaymentDone && order.isPaymentSuccesufl) {
     showPaidPayUInfo()
   } else if (order.isPaymentDone && !order.isPaymentSuccesufl) {
