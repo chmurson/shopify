@@ -54,7 +54,7 @@ function createPayUOrderCreation(document) {
 }
 
 function createsPayUBody(document) {
-  const totalPrice = shopifyPriceToPayU(document.total_line_items_price);
+  const totalPrice = shopifyPriceToPayU(document.total_price);
   const products = document.line_items.map((item)=> {
     return {
       name: item.name,
