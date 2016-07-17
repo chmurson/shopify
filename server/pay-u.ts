@@ -1,9 +1,9 @@
 import * as request from 'request-promise';
 
-const payUrl = 'https://secure.payu.com';
+import {payUUrl} from './config';
 
-const authUrl = payUrl + '/pl/standard/user/oauth/authorize';
-const payUOrderCreationUrl = payUrl + '/api/v2_1/orders/';
+const authUrl = payUUrl + '/pl/standard/user/oauth/authorize';
+const payUOrderCreationUrl = payUUrl + '/api/v2_1/orders/';
 
 export function getAccessToken(clientId:(string | number), clientSecret:string):Promise<string> {
   return request({
