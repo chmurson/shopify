@@ -20,10 +20,10 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
       return insertDocument(ORDER_PAY_U_NOTIFICATION_COLLECTION_NAME, req.body)
     })
     .then((msg)=> {
-      res.sendStatus(200).send(createSuccessJson(msg))
+      res.status(200).send(createSuccessJson(msg))
     })
     .catch((error)=> {
-      res.sendStatus(500).send(createFailureJson(error || "Unknown error"))
+      res.status(500).send(createFailureJson(error || "Unknown error"))
     });
 }
 
