@@ -51,7 +51,7 @@ export function getDocuments(collectionName, query) {
  * @param document
  * @param uniqueKey
  */
-export function updateDocument(collectionName, document, uniqueKey) {
+export function updateDocument(collectionName, document, uniqueKey: string = 'id') {
   const query = {[uniqueKey]: document[uniqueKey]};
   const url = baseUrl + `/${collectionName}?q=${JSON.stringify(query)}&apiKey=${herokuMlabApiKey}`;
   return request({

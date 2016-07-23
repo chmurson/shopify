@@ -44,7 +44,8 @@ function createPayUOrderCreation(document) {
   }).then((body)=> {
     document.payU = {
       orderId: body.orderId,
-      redirectUri: body.redirectUri
+      redirectUri: body.redirectUri,
+      status: "PENDING"
     };
     return updateDocument(ORDERS_COLLECTION_NAME, document, 'id');
   }).then(()=> {

@@ -1,7 +1,7 @@
 import application from './../application';
 import * as express from 'express';
 import {getDocuments} from './../database';
-import {ORDERS_COLLECTION_NAME} from './../model';
+import {ORDERS_COLLECTION_NAME, ORDER_PAY_U_REPORT_COLLECTION_NAME} from './../model';
 
 /**
  * Returns previously saved by shopify hook (./order-creation) order
@@ -20,7 +20,7 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
 
   getDocuments(ORDERS_COLLECTION_NAME, {
     checkout_token: checkoutToken
-  }).then(document=> {
+  }).then(documentWithNotifications=> {
     res.json(document);
   }).catch(error=> {
     res.status(500).json({
@@ -29,4 +29,3 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
     })
   });
 }
-
