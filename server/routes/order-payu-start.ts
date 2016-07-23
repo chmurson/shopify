@@ -2,8 +2,7 @@ import application from './../application';
 import * as express from 'express';
 import {getDocuments, updateDocument} from './../database';
 import {ORDERS_COLLECTION_NAME} from './../model';
-import {shopCheckoutUrl, shopUrl, backendUrl} from './../config';
-import {payUClientSecret, payUPClientId} from './../config';
+import {shopCheckoutUrl, shopUrl, backendUrl, payUClientSecret, payUPClientId} from './../config';
 import {createNewOrder, getAccessToken} from './../pay-u';
 
 application.get('/order-payu-start/:checkoutToken', requestHandler);
@@ -65,6 +64,7 @@ function createsPayUBody(document) {
   //@todo get proper point of sale
   return {
     "notifyUrl": `${backendUrl}/order-payu-notification`,
+    "continueUrl": `${shopCheckoutUrl}/${document.checkout_token}/thank_you`,
     "customerIp": "127.0.0.1",
     "merchantPosId": payUPClientId,
     "description": "New order",
