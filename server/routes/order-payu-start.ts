@@ -14,7 +14,7 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
     return res.redirect(shopUrl);
   }
 
-  const checkoutUrl = shopCheckoutUrl + checkoutToken;
+  const checkoutUrl = `${shopCheckoutUrl}/${checkoutToken}`;
   let currentDocument = null;
   getDocuments(ORDERS_COLLECTION_NAME, {
     checkout_token: checkoutToken
