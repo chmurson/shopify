@@ -1,4 +1,4 @@
-export const shopCheckoutUrl = `https://checkout.shopify.com/11934542/checkouts/`;
+export const shopCheckoutUrl = `https://checkout.shopify.com/11934542/checkouts`;
 export const shopUrl = `https://glassify-eu.myshopify.com`;
 export const backendUrl = `https://glassify.herokuapp.com/`;
 
