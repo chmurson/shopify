@@ -18,6 +18,8 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
     res.status(400).json(createFailureJson("Document has no checkout_token"));
   }
 
+  document.glassify_hookcall_timestamp = new Date().toISOString();
+
   insertOrUpdateDocument(ORDERS_COLLECTION_NAME, document, 'checkout_token');
   res.json(createSuccessJson());
 }
