@@ -8,7 +8,7 @@ application.post('/order-payu-notification', requestHandler);
 
 function requestHandler(req:express.Request, res:express.Response, next:express.NextFunction) {
   if (!req.body.order || !req.body.order.extOrderId) {
-    return res.sendStatus(500).send(createFailureJson("no extOrderId set"));
+    return res.status(500).json(createFailureJson("no extOrderId set"));
   }
   const extOrderId = req.body.order.extOrderId;
 
@@ -20,10 +20,10 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
       return insertDocument(ORDER_PAY_U_NOTIFICATION_COLLECTION_NAME, req.body)
     })
     .then((msg)=> {
-      res.status(200).send(createSuccessJson(msg))
+      res.status(200).json(createSuccessJson(msg))
     })
     .catch((error)=> {
-      res.status(500).send(createFailureJson(error || "Unknown error"))
+      res.status(500).json(createFailureJson(error || "Unknown error"))
     });
 }
 
