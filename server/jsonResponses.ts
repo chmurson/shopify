@@ -1,6 +1,7 @@
-export function createSuccessJson() {
+export function createSuccessJson(msg = "") {
   return {
-    "isSuccess": true
+    "isSuccess": true,
+    "message": msg
   }
 }
 

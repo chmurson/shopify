@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="89e19469-14d4-46dc-9e88-7561d364f1e9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/config.ts" afterPath="$PROJECT_DIR$/server/config.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/jsonResponses.ts" afterPath="$PROJECT_DIR$/server/jsonResponses.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/order-payu-notification.ts" afterPath="$PROJECT_DIR$/server/routes/order-payu-notification.ts" />
     </list>
     <ignored path="shopify-glassify-checkout-paczkomaty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,28 +31,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="79" selection-start-line="0" selection-start-column="79" selection-end-line="0" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/application.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order-creation.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes/order-creation.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,31 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order-payu-notification.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="order-payu-notification.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/routes/order-payu-notification.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order-payu-start.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/routes/order-payu-start.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-879">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pay-u.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/pay-u.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            <state relative-caret-position="255">
+              <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -119,11 +78,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lib.es6.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/typescriptCompiler/external/lib.es6.d.ts">
+      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/typings/globals/express-serve-static-core/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18645">
-              <caret line="1256" column="10" selection-start-line="1256" selection-start-column="10" selection-end-line="1256" selection-end-column="10" />
+            <state relative-caret-position="171">
+              <caret line="431" column="8" selection-start-line="431" selection-start-column="8" selection-end-line="431" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scratch_3.es6" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.es6">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jsonResponses.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/jsonResponses.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/database.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order-payu-start.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/routes/order-payu-start.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-616">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -146,10 +147,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/index.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2" />
-        <option value="$PROJECT_DIR$/server/jsonResponses.ts" />
         <option value="$PROJECT_DIR$/server/database.ts" />
         <option value="$PROJECT_DIR$/src/env-config.prod.js" />
         <option value="$PROJECT_DIR$/src/config.js" />
@@ -162,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/env-config.js" />
         <option value="$PROJECT_DIR$/server/application.ts" />
         <option value="$PROJECT_DIR$/server/model.ts" />
-        <option value="$PROJECT_DIR$/server/routes/order-payu-notification.ts" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-report.ts" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-start.js" />
@@ -197,6 +195,9 @@
         <option value="$PROJECT_DIR$/server/routes/order-payu-start.ts" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-end.ts" />
         <option value="$PROJECT_DIR$/server/config.ts" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.es6" />
+        <option value="$PROJECT_DIR$/server/jsonResponses.ts" />
+        <option value="$PROJECT_DIR$/server/routes/order-payu-notification.ts" />
       </list>
     </option>
   </component>
@@ -318,12 +319,10 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1005" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="SearchEverywhereHistoryKey" value="thank&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/thank-you.js&#10;rea&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/satelite/README.md&#10;paczkomatSe&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/contact-information/paczkomatSelect.js&#10;parseXm&#9;null&#9;null&#10;extra.s&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/extra.styl" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$3/Languages" value="ECMAScript 6" />
   </component>
-  <component name="RunManager" selected="Node.js.index.js">
+  <component name="RunManager" selected="Node.js.scratch_3.es6">
     <configuration default="false" name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/server">
-      <method />
-    </configuration>
-    <configuration default="false" name="scratch_6" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_6" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="false" name="scratch_7" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_7" working-dir="$PROJECT_DIR$">
@@ -333,6 +332,9 @@
       <method />
     </configuration>
     <configuration default="false" name="scratch_12" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_12" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="false" name="scratch_3.es6" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.es6" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -401,18 +403,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Node.js.index.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.scratch_6" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.scratch_7" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.scratch_8" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.scratch_12" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.scratch_7" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.scratch_8" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.scratch_12" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.scratch_3.es6" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.index.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.scratch_12" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.scratch_8" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.scratch_7" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.scratch_6" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.scratch_3.es6" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.index.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.scratch_12" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.scratch_8" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.scratch_7" />
       </list>
     </recent_temporary>
   </component>
@@ -433,7 +435,7 @@
       <workItem from="1468150277647" duration="28479000" />
       <workItem from="1468615442153" duration="10686000" />
       <workItem from="1468964631187" duration="270000" />
-      <workItem from="1469269035988" duration="1181000" />
+      <workItem from="1469269035988" duration="2433000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1468151998150</created>
@@ -526,24 +528,31 @@
       <option name="project" value="LOCAL" />
       <updated>1469276438523</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="FIX shopCheckoutUrl URL">
+      <created>1469277884861</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1469277884862</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45426000" />
+    <option name="totallyTimeSpent" value="46678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="896" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18604651" sideWeight="0.47689465" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26865673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18604651" sideWeight="0.5231054" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3951782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -576,7 +585,9 @@
     <MESSAGE value="cleaning of package.json" />
     <MESSAGE value="fixes" />
     <MESSAGE value="added continue_url to createsPayUBody function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added continue_url to createsPayUBody function" />
+    <MESSAGE value="FIX shopCheckoutUrl URL" />
+    <MESSAGE value="block notifications if order is already completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="block notifications if order is already completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -585,9 +596,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_12" />
-    <entry file="file://$PROJECT_DIR$/server/routes/order.ts" />
-    <entry file="file://$PROJECT_DIR$/server/jsonResponses.ts" />
     <entry file="file://$PROJECT_DIR$/server/index.ts" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -729,7 +737,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/satelite/README.md" />
-    <entry file="file://$PROJECT_DIR$/server/database.ts" />
     <entry file="file://$PROJECT_DIR$/src/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -813,14 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/order-payu-notification.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/order-payu-end.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -839,9 +838,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/order-payu-start.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-879">
+        <state relative-caret-position="-616">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/typings/globals/express-serve-static-core/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="431" column="8" selection-start-line="431" selection-start-column="8" selection-end-line="431" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/jsonResponses.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/order-payu-notification.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
