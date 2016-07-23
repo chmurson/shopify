@@ -6,8 +6,8 @@ import {maxAttemptNumber, getOrderTimeoutBeforeNextAttempt, PAY_U_GATWAY} from '
  * @param orderNumber
  * @returns {Promise}
  */
-export function getOrder(orderNumber) {
-  return $.getJSON(`${BACKEND_URL}/order/${orderNumber}`)
+export function getOrder(checkoutToken) {
+  return $.getJSON(`${BACKEND_URL}/order/${checkoutToken}`)
     .then(orders=> {
       if (typeof orders === "string") {
         orders = JSON.parse(orders);
@@ -15,15 +15,15 @@ export function getOrder(orderNumber) {
       if (orders[0]) {
         return new Order(orders[0]);
       }
-      return null;
+      return $.Deferred().reject("No order has been found");
     });
 }
 
 /**
- * @param orderNumber
+ * @param checkoutToken
  * @returns {Promise}
  */
-export function startOrderFetching(orderNumber) {
+export function startOrderFetching(checkoutToken) {
   return new Promise((resolve, reject)=> {
     let attemptCount = 0;
     _getOrderAttempt();
@@ -32,7 +32,7 @@ export function startOrderFetching(orderNumber) {
       if (attemptCount > maxAttemptNumber) {
         return reject();
       }
-      getOrder(orderNumber)
+      getOrder(checkoutToken)
         .then(order=> {
           resolve(order)
         }, ()=> {
@@ -42,6 +42,15 @@ export function startOrderFetching(orderNumber) {
     }
   });
 }
+
+export const paymentStatuses = {
+  CREATED: "CREATED",
+  COMPLETED: "COMPLETED",
+  REJECTED: "REJECTED",
+  CANCELED: "CANCELED",
+  PENDING: "PENDING",
+  WAITING_FOR_CONFIRMATION: "WAITING_FOR_CONFIRMATION"
+};
 
 export class Order {
   constructor(data) {
@@ -54,11 +63,7 @@ export class Order {
     return this.gateway === PAY_U_GATWAY;
   }
 
-  get isPaymentDone() {
-    return (this.payU) && (this.payU.isSuccess !== undefined);
-  }
-
-  get isPaymentSuccesufl() {
-    return (this.payU) && (this.payU.isSuccess === true);
+  get status() {
+    return (this.payU) ? (this.payU.status) : undefined;
   }
 }

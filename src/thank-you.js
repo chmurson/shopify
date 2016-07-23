@@ -5,57 +5,59 @@ import $ from 'jquery';
 import {BACKEND_URL} from './env-config';
 import 'jquery-deparam';
 
-import {startOrderFetching} from './pay-u';
+import {startOrderFetching, paymentStatuses} from './pay-u';
+import * as messages from './thank-you/messages'
+
+const checkout_token = Shopify.checkout.token;
 
 processOrder();
 
 function processOrder() {
-  const checkout_token = Shopify.checkout.token;
-
   startOrderFetching(checkout_token)
     .then(showOrderInfo)
-    .catch(showOrderLoadError)
+    .catch(infoServerError)
     .then(turnOffDefaultLoadingScreen);
+}
+
+const paymentStatusToShowInfo = {
+  [paymentStatuses.CREATED]: createdInfo,
+  [paymentStatuses.PENDING]: pendingInfo,
+  [paymentStatuses.WAITING_FOR_CONFIRMATION]: waitForConfirmationInfo,
+  [paymentStatuses.REJECTED]: rejectedInfo,
+  [paymentStatuses.CANCELED]: canceledInfo,
+  [paymentStatuses.COMPLETED]: completedInfo
+};
+
+
+/**
+ * @param {Order} order
+ */
+function showOrderInfo(order) {
+  const hasError = hasOrderAnError(order);
+  if (order.isPayU === false) {
+    return; //do nothing if it's not PayU
+  }
+  const infoAction = paymentStatusToShowInfo[order.status];
+  if (!infoAction || hasError) {
+    infoSomeError();
+  }
+  infoAction.call();
 }
 
 
 /**
- * @param string checkout_token
- * @param {Order} order
+ * ACTIONS
  */
-function showOrderInfo(order) {
-  const error = hasOrderAnError(order);
-  const checkout_token = order.checkout_token;
-  if (order.isPayU === false) {
-    return; //do nothing if it's not PayU
-  }
-  if (order.isPaymentDone && order.isPaymentSuccesufl) {
-    showPaidPayUInfo()
-  } else if (order.isPaymentDone && !order.isPaymentSuccesufl) {
-    showPaidPayUIError(checkout_token);
-  } else if (error) {
-    showNotPaidPayUError(checkout_token);
-  } else {
-    showNotPaidPayUInfo(checkout_token);
-  }
+function infoSomeError() {
+  Shopify.Checkout.OrderStatus.addContentBox(messages.createSomeError());
 }
-
-function showNotPaidPayUError(checkout_token) {
-  const url = getPayUStartUrl(checkout_token);
-  Shopify.Checkout.OrderStatus.addContentBox(`
-    <h2 class="os-step__title error">Błąd serwera</h2>
-    <p>W trakcie przetwarzania transakcji PayU wystąpił błąd.</p>
-    <p>Kliknij <a href="${url}">tutaj</a>, aby spróbować jeszcze raz.</p>
-    <p>Jeśli problem nie ustąpi, skontaktuj się z nami.</p>
-  `);
+function infoServerError() {
+  Shopify.Checkout.OrderStatus.addContentBox(messages.createServerError());
 }
-
-function showNotPaidPayUInfo(checkout_token) {
+function createdInfo(checkout_token) {
   const url = getPayUStartUrl(checkout_token);
-  Shopify.Checkout.OrderStatus.addContentBox(`
-    <p>Za chwilę zostaniesz przekierowany na strone PayU gdzię będziesz mógł dokonał opłaty.</p>
-    <p>Jeśli tak się nie stanie, możesz się przenieść klikając <a id="navigate-to-payu" href="${url}">tutaj</a></p>    
-  `);
+  Shopify.Checkout.OrderStatus.addContentBox(messages.createCreatedMessage(url));
+
   $('#navigate-to-payu').on('click', function () {
     window.clearTimeout(timer); //to prevent duplication of requests
   });
@@ -63,33 +65,21 @@ function showNotPaidPayUInfo(checkout_token) {
     location.href = url;
   }, 5000);
 }
-
-function showPaidPayUIError(checkout_token) {
-  const url = getPayUStartUrl(checkout_token);
-  Shopify.Checkout.OrderStatus.addContentBox(`
-    <h2 class="os-step__title error">Niepowodzenie</h2>
-    <p>Niestety płatność nie została zaakceptowana. </p>
-    <p>Spróbuj jeszcze raz <a id="navigate-to-payu" href="${url}">tutaj</a>, albo skontaktuj się z pomocą.</p>
-  `);
+function rejectedInfo() {
+  Shopify.Checkout.OrderStatus.addContentBox(messages.createRejectedMessage());
 }
-
-function showPaidPayUInfo() {
-  Shopify.Checkout.OrderStatus.addContentBox(`
-    <p>Płatność za zamowienie została zakceptowana. Dziękujemy.</p>
-  `);
+function completedInfo() {
+  Shopify.Checkout.OrderStatus.addContentBox(messages.createCompletedMessage());
 }
-
-function showOrderLoadError(error) {
-  console.log(error);
-  Shopify.Checkout.OrderStatus.addContentBox(`
-    <h2 class="os-step__title error">Błąd serwera</h2>
-    <p class="error">Nie mogliśmy połączyć się z serwerem przez co nie wiemy jaki jest status płatności PayU.
-      Spróbuj za chwilę odświerzyć stronę. Możliwe, że to tylko chwilowe problemy. Jeśli problem nie ustępuje, 
-      skontaktuj się z nami.
-    </p>
-  `);
+function pendingInfo() {
+  Shopify.Checkout.OrderStatus.addContentBox(messages.createPendingMessage());
 }
-
+function canceledInfo() {
+  Shopify.Checkout.OrderStatus.addContentBox(messages.createCanceledMessage());
+}
+function waitForConfirmationInfo() {
+  Shopify.Checkout.OrderStatus.addContentBox(messages.createWaitingForConfirmationMessage());
+}
 
 /**
  * turn off default css loading screen
