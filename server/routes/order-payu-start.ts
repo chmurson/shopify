@@ -23,6 +23,9 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
       return res.redirect(checkoutUrl);
     }
     currentDocument = documents[0];
+    if (currentDocument.payU) {
+      return currentDocument.payU.redirectUri;
+    }
     return createPayUOrderCreation(documents[0]);
   }).then(url=> {
     res.redirect(url);
@@ -39,18 +42,19 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
 
 function createPayUOrderCreation(document) {
   const body = createsPayUBody(document);
-  return getAccessToken(payUPClientId, payUClientSecret).then((accessToken)=> {
-    return createNewOrder(accessToken, body);
-  }).then((body)=> {
-    document.payU = {
-      orderId: body.orderId,
-      redirectUri: body.redirectUri,
-      status: "PENDING"
-    };
-    return updateDocument(ORDERS_COLLECTION_NAME, document, 'id');
-  }).then(()=> {
-    return document.payU.redirectUri;
-  });
+  return getAccessToken(payUPClientId, payUClientSecret)
+    .then((accessToken)=> {
+      return createNewOrder(accessToken, body);
+    }).then((body)=> {
+      document.payU = {
+        orderId: body.orderId,
+        redirectUri: body.redirectUri,
+        status: "CREATED" //my custom status
+      };
+      return updateDocument(ORDERS_COLLECTION_NAME, document, 'id');
+    }).then(()=> {
+      return document.payU.redirectUri;
+    });
 }
 
 function createsPayUBody(document) {
