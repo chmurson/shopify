@@ -20,7 +20,7 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
 
   getDocuments(ORDERS_COLLECTION_NAME, {
     checkout_token: checkoutToken
-  }).then(documentWithNotifications=> {
+  }).then(document=> {
     res.json(document);
   }).catch(error=> {
     res.status(500).json({
