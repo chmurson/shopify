@@ -6,7 +6,6 @@ import application from './application';
 import './routes/index';
 import './routes/order';
 import './routes/order-creation';
-import './routes/order-payu-end';
 import './routes/order-payu-notification';
 import './routes/order-payu-update';
 import './routes/order-payu-start';

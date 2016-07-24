@@ -4,6 +4,7 @@ import {getDocuments, updateDocument} from './../database';
 import {ORDERS_COLLECTION_NAME} from './../model';
 import {createSuccessJson, createFailureJson} from './../jsonResponses';
 
+const url = '/order-payu-update';
 application.post('/order-payu-update', requestHandler);
 
 function requestHandler(req:express.Request, res:express.Response, next:express.NextFunction) {
@@ -16,7 +17,7 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
 
 
   /**
-   * @returns {Number}
+   * @returns {Promise<Number>|Promise}
    */
   function getShopifyId() {
     return new Promise(resolve=> resolve(req.body.id));
@@ -51,6 +52,7 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
   }
 
   function failure(error) {
+    console.warn(`Failed: ${url} ${error}`);
     res.status(500).json(createFailureJson(error));
   }
 }
