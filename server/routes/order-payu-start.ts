@@ -49,6 +49,7 @@ function createPayUOrderCreation(document) {
       document.payU = {
         orderId: body.orderId,
         redirectUri: body.redirectUri,
+        continueUrl: body.continueUrl,
         status: "CREATED" //my custom status
       };
       return updateDocument(ORDERS_COLLECTION_NAME, document, 'id');

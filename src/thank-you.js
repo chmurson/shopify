@@ -8,8 +8,8 @@ import 'jquery-deparam';
 import {startOrderFetching, paymentStatuses} from './pay-u';
 import * as messages from './thank-you/messages'
 
-//const checkout_token = Shopify.checkout.token;
-const checkout_token = "66fa45f79b07d73b83ad8d3350ddd463";
+const checkout_token = Shopify.checkout.token;
+//const checkout_token = "0975fe6fc798dc6ef50b0ee4b9ac494a";
 
 processOrder();
 
@@ -21,6 +21,7 @@ function processOrder() {
 }
 
 const paymentStatusToShowInfo = {
+  [undefined]: createdInfo,
   [paymentStatuses.CREATED]: createdInfo,
   [paymentStatuses.PENDING]: pendingInfo,
   [paymentStatuses.WAITING_FOR_CONFIRMATION]: waitForConfirmationInfo,
@@ -58,7 +59,7 @@ function infoSomeError() {
 function infoServerError() {
   Shopify.Checkout.OrderStatus.addContentBox(messages.createServerError());
 }
-function createdInfo(checkout_token) {
+function createdInfo() {
   const url = getPayUStartUrl(checkout_token);
   Shopify.Checkout.OrderStatus.addContentBox(messages.createCreatedMessage(url));
 
@@ -84,6 +85,9 @@ function canceledInfo() {
 function waitForConfirmationInfo() {
   Shopify.Checkout.OrderStatus.addContentBox(messages.createWaitingForConfirmationMessage());
 }
+/**
+ * ACTIONS END
+ */
 
 /**
  * turn off default css loading screen
