@@ -1,7 +1,8 @@
-console.log("hello world");
 /// <reference path='typings/index.d.ts' />
 import * as http from 'http';
 import application from './application';
+import * as env from './env';
+import * as constants from './constants';
 
 import './routes/index';
 import './routes/order';
@@ -9,6 +10,16 @@ import './routes/order-creation';
 import './routes/order-payu-notification';
 import './routes/order-payu-update';
 import './routes/order-payu-start';
+
+// All env variables are required if not explicitly said to be optional
+if (!env.check([
+    constants.SHOPIFY_API_KEY,
+    constants.SHOPIFY_API_PASSWORD,
+    constants.SHOPIFY_SHOP_NAME
+  ])) {
+  process.exit(1);
+}
+
 
 const server = http.createServer(application);
 const port = process.env.PORT || 8082;
