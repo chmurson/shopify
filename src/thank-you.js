@@ -8,7 +8,8 @@ import 'jquery-deparam';
 import {startOrderFetching, paymentStatuses} from './pay-u';
 import * as messages from './thank-you/messages'
 
-const checkout_token = Shopify.checkout.token;
+//const checkout_token = Shopify.checkout.token;
+const checkout_token = "66fa45f79b07d73b83ad8d3350ddd463";
 
 processOrder();
 
@@ -34,12 +35,15 @@ const paymentStatusToShowInfo = {
  */
 function showOrderInfo(order) {
   const hasError = hasOrderAnError(order);
+  if (order.cancelled_at){
+    return; //do nothing order is cancelled
+  }
   if (order.isPayU === false) {
     return; //do nothing if it's not PayU
   }
   const infoAction = paymentStatusToShowInfo[order.status];
   if (!infoAction || hasError) {
-    infoSomeError();
+    return infoSomeError();
   }
   infoAction.call();
 }
