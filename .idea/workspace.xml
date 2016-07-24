@@ -4,7 +4,6 @@
     <list default="true" id="89e19469-14d4-46dc-9e88-7561d364f1e9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/order-payu-start.ts" afterPath="$PROJECT_DIR$/server/routes/order-payu-start.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/thank-you.js" afterPath="$PROJECT_DIR$/src/thank-you.js" />
     </list>
     <ignored path="shopify-glassify-checkout-paczkomaty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,27 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="scratch_9.json" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="547" selection-end-column="1" />
-              <folding>
-                <element signature="e#1263#1353#0" expanded="false" />
-                <element signature="e#1384#1420#0" expanded="false" />
-                <element signature="e#1563#1672#0" expanded="false" />
-                <element signature="e#1918#7429#0" expanded="false" />
-                <element signature="e#7453#7864#0" expanded="false" />
-                <element signature="n#!!block;n#billing_address#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#shipping_address#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#client_details#0;n#!!top" expanded="false" />
-                <element signature="e#9301#17830#0" expanded="false" />
-                <element signature="n#!!block;n#customer#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="order-creation.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/order-creation.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,17 +35,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order-payu-start.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes/order-payu-start.js">
+      <file leaf-file-name="pay-u.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/pay-u.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+            <state relative-caret-position="281">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thank-you.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="order-payu-start.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/routes/order-payu-start.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+              <folding>
+                <marker date="1469358870000" expanded="true" signature="1864:1936" ph="{&quot;status&quot;: &quot;CREATED&quot;...}" />
+                <marker date="1469358870000" expanded="true" signature="1864:2033" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thank-you.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/thank-you.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -93,8 +84,8 @@
       <file leaf-file-name="order-payu-update.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/order-payu-update.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="90">
+              <caret line="6" column="36" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="36" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -132,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order-payu-start.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="order-payu-start.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/routes/order-payu-start.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+            <state relative-caret-position="269">
+              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -210,8 +201,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.es6" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-update.js" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-update.ts" />
-        <option value="$PROJECT_DIR$/server/routes/order-payu-start.ts" />
         <option value="$PROJECT_DIR$/src/thank-you.js" />
+        <option value="$PROJECT_DIR$/server/routes/order-payu-start.ts" />
       </list>
     </option>
   </component>
@@ -346,7 +337,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1005" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="SearchEverywhereHistoryKey" value="thank&#9;FILE&#9;file:///Users/wpiat/Dev/shopify/src/thank-you.js&#10;rea&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/satelite/README.md&#10;paczkomatSe&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/contact-information/paczkomatSelect.js&#10;parseXm&#9;null&#9;null&#10;extra.s&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/extra.styl" />
+    <property name="SearchEverywhereHistoryKey" value="Create&#9;null&#9;null&#10;thank&#9;FILE&#9;file:///Users/wpiat/Dev/shopify/src/thank-you.js&#10;rea&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/satelite/README.md&#10;paczkomatSe&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/contact-information/paczkomatSelect.js&#10;parseXm&#9;null&#9;null&#10;extra.s&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/extra.styl" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$3/Languages" value="ECMAScript 6&#10;JSON" />
   </component>
   <component name="RunManager" selected="Node.js.index.js">
@@ -464,7 +455,7 @@
       <workItem from="1468615442153" duration="10686000" />
       <workItem from="1468964631187" duration="270000" />
       <workItem from="1469269035988" duration="12467000" />
-      <workItem from="1469297577099" duration="5581000" />
+      <workItem from="1469297577099" duration="6157000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1468151998150</created>
@@ -641,24 +632,31 @@
       <option name="project" value="LOCAL" />
       <updated>1469355859122</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="removed debug stuff form thank-you&#10;added to `order.payU.continueUrl`  to orders collection on `order-payu-start`">
+      <created>1469358328110</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1469358328110</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62293000" />
+    <option name="totallyTimeSpent" value="62869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="896" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26286116" sideWeight="0.4547135" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26286116" sideWeight="0.45646766" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26865673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26286116" sideWeight="0.54528654" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26286116" sideWeight="0.5435323" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39303482" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -701,7 +699,8 @@
     <MESSAGE value="proper handling of order statuses" />
     <MESSAGE value="added debug timestamp" />
     <MESSAGE value="order cancellation" />
-    <option name="LAST_COMMIT_MESSAGE" value="order cancellation" />
+    <MESSAGE value="removed debug stuff form thank-you&#10;added to `order.payU.continueUrl`  to orders collection on `order-payu-start`" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed debug stuff form thank-you&#10;added to `order.payU.continueUrl`  to orders collection on `order-payu-start`" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -861,14 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/pay-u.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/config.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -902,7 +893,7 @@
         <state relative-caret-position="120">
           <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1039,16 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/order-payu-update.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/order-creation.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1060,17 +1041,10 @@
     <entry file="file://$PROJECT_DIR$/server/routes/order-payu-start.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/order-payu-start.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <marker date="1469358870000" expanded="true" signature="1864:1936" ph="{&quot;status&quot;: &quot;CREATED&quot;...}" />
+            <marker date="1469358870000" expanded="true" signature="1864:2033" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1090,6 +1064,34 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#43#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/order-payu-update.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/pay-u.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/order-payu-start.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>

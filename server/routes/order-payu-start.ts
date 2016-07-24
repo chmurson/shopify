@@ -41,15 +41,15 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
 }
 
 function createPayUOrderCreation(document) {
-  const body = createsPayUBody(document);
+  const bodyRequest = createsPayUBody(document);
   return getAccessToken(payUPClientId, payUClientSecret)
     .then((accessToken)=> {
-      return createNewOrder(accessToken, body);
-    }).then((body)=> {
+      return createNewOrder(accessToken, bodyRequest);
+    }).then((bodyResponse)=> {
       document.payU = {
-        orderId: body.orderId,
-        redirectUri: body.redirectUri,
-        continueUrl: body.continueUrl,
+        orderId: bodyResponse.orderId,
+        redirectUri: bodyResponse.redirectUri,
+        continueUrl: bodyRequest.continueUrl,
         status: "CREATED" //my custom status
       };
       return updateDocument(ORDERS_COLLECTION_NAME, document, 'id');
