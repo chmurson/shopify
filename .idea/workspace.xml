@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="89e19469-14d4-46dc-9e88-7561d364f1e9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/order-payu-notification.ts" afterPath="$PROJECT_DIR$/server/routes/order-payu-notification.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/order-creation.ts" afterPath="$PROJECT_DIR$/server/routes/order-creation.ts" />
     </list>
     <ignored path="shopify-glassify-checkout-paczkomaty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="order-payu-notification.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="order-payu-notification.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/order-payu-notification.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
@@ -33,6 +33,16 @@
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order-creation.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/routes/order-creation.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,18 +103,6 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="31" />
-              <folding>
-                <element signature="e#44#73#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -182,7 +180,6 @@
         <option value="$PROJECT_DIR$/src/pay-u/index.js" />
         <option value="$PROJECT_DIR$/src/thank-you/messages.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.es6" />
-        <option value="$PROJECT_DIR$/server/routes/order-creation.ts" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_9.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_10.json" />
@@ -197,6 +194,7 @@
         <option value="$PROJECT_DIR$/server/env.ts" />
         <option value="$PROJECT_DIR$/server/constants.ts" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-notification.ts" />
+        <option value="$PROJECT_DIR$/server/routes/order-creation.ts" />
       </list>
     </option>
   </component>
@@ -455,7 +453,7 @@
       <workItem from="1468964631187" duration="270000" />
       <workItem from="1469269035988" duration="12467000" />
       <workItem from="1469297577099" duration="10222000" />
-      <workItem from="1469394287282" duration="3724000" />
+      <workItem from="1469394287282" duration="4019000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1468151998150</created>
@@ -667,11 +665,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469482539163</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix for mark as paid">
+      <created>1469482854370</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1469482854370</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70658000" />
+    <option name="totallyTimeSpent" value="70953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="896" extended-state="6" />
@@ -732,7 +737,8 @@
     <MESSAGE value="removed order-payu-end route&#10;added debug on failure of order-payu-notification" />
     <MESSAGE value="shopify creates transaction on complete notification from payU" />
     <MESSAGE value="extra log information for payu-notification" />
-    <option name="LAST_COMMIT_MESSAGE" value="extra log information for payu-notification" />
+    <MESSAGE value="fix for mark as paid" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix for mark as paid" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -952,14 +958,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/order-payu-end.ts" />
-    <entry file="file://$PROJECT_DIR$/server/routes/order-creation.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1091,6 +1089,14 @@
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/order-creation.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
