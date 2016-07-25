@@ -60,10 +60,10 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
     const shopName = env.get(constants.SHOPIFY_SHOP_NAME);
     const shopify = new Shopify(shopName, apiKey, password);
 
-    return getOrderTotalPrice()
-      .then(totalPrice=> {
-        return shopify.transaction.create(id, {
-          "amount": totalPrice,
+    return getOrder()
+      .then(order=> {
+        return shopify.transaction.create(order.id, {
+          "amount": order.total_price,
           "kind": "capture"
         });
       }).then((result)=> {
@@ -94,12 +94,6 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
         }
         return orderCache = docs[0];
       });
-  }
-
-  function getOrderTotalPrice() {
-    return getOrder().then(order=> {
-      return order.total_price;
-    });
   }
 
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89e19469-14d4-46dc-9e88-7561d364f1e9" name="Default" comment="shopify creates transaction on complete notification from payU">
+    <list default="true" id="89e19469-14d4-46dc-9e88-7561d364f1e9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/order-payu-notification.ts" afterPath="$PROJECT_DIR$/server/routes/order-payu-notification.ts" />
     </list>
@@ -28,8 +28,8 @@
       <file leaf-file-name="order-payu-notification.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/routes/order-payu-notification.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+            <state relative-caret-position="104">
+              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -455,7 +455,7 @@
       <workItem from="1468964631187" duration="270000" />
       <workItem from="1469269035988" duration="12467000" />
       <workItem from="1469297577099" duration="10222000" />
-      <workItem from="1469394287282" duration="3435000" />
+      <workItem from="1469394287282" duration="3724000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1468151998150</created>
@@ -660,11 +660,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469396384093</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="extra log information for payu-notification">
+      <created>1469482539163</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1469482539163</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70369000" />
+    <option name="totallyTimeSpent" value="70658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="896" extended-state="6" />
@@ -724,7 +731,8 @@
     <MESSAGE value="continueUrl fixed" />
     <MESSAGE value="removed order-payu-end route&#10;added debug on failure of order-payu-notification" />
     <MESSAGE value="shopify creates transaction on complete notification from payU" />
-    <option name="LAST_COMMIT_MESSAGE" value="shopify creates transaction on complete notification from payU" />
+    <MESSAGE value="extra log information for payu-notification" />
+    <option name="LAST_COMMIT_MESSAGE" value="extra log information for payu-notification" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1078,8 +1086,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/order-payu-notification.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+        <state relative-caret-position="104">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
