@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="89e19469-14d4-46dc-9e88-7561d364f1e9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/order-creation.ts" afterPath="$PROJECT_DIR$/server/routes/order-creation.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/thank-you/messages.js" afterPath="$PROJECT_DIR$/src/thank-you/messages.js" />
     </list>
     <ignored path="shopify-glassify-checkout-paczkomaty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order-creation.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="order-creation.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/order-creation.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -53,6 +53,28 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thank-you.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/thank-you.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/thank-you/messages.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="94" selection-start-line="36" selection-start-column="94" selection-end-line="36" selection-end-column="94" />
+              <folding>
+                <marker date="1469484413000" expanded="true" signature="263:501" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,26 +104,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/database.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="env.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/env.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -178,7 +180,6 @@
         <option value="$PROJECT_DIR$/server/routes/order.ts" />
         <option value="$PROJECT_DIR$/assets/checkout_4.html" />
         <option value="$PROJECT_DIR$/src/pay-u/index.js" />
-        <option value="$PROJECT_DIR$/src/thank-you/messages.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.es6" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_9.json" />
@@ -186,7 +187,6 @@
         <option value="$PROJECT_DIR$/server/routes/order-payu-cancelation.ts" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.es6" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-update.js" />
-        <option value="$PROJECT_DIR$/src/thank-you.js" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-start.ts" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-update.ts" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.es6" />
@@ -195,6 +195,8 @@
         <option value="$PROJECT_DIR$/server/constants.ts" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-notification.ts" />
         <option value="$PROJECT_DIR$/server/routes/order-creation.ts" />
+        <option value="$PROJECT_DIR$/src/thank-you.js" />
+        <option value="$PROJECT_DIR$/src/thank-you/messages.js" />
       </list>
     </option>
   </component>
@@ -329,7 +331,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1005" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="SearchEverywhereHistoryKey" value="Create&#9;null&#9;null&#10;thank&#9;FILE&#9;file:///Users/wpiat/Dev/shopify/src/thank-you.js&#10;rea&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/satelite/README.md&#10;paczkomatSe&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/contact-information/paczkomatSelect.js&#10;parseXm&#9;null&#9;null&#10;extra.s&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/extra.styl" />
+    <property name="SearchEverywhereHistoryKey" value="messa&#9;FILE&#9;file:///Users/wpiat/Dev/shopify/src/thank-you/messages.js&#10;thank&#9;FILE&#9;file:///Users/wpiat/Dev/shopify/src/thank-you.js&#10;Create&#9;null&#9;null&#10;rea&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/satelite/README.md&#10;paczkomatSe&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/contact-information/paczkomatSelect.js&#10;parseXm&#9;null&#9;null&#10;extra.s&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/extra.styl" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$3/Languages" value="ECMAScript 6&#10;JSON" />
   </component>
   <component name="RunManager" selected="Node.js.index.js">
@@ -453,7 +455,7 @@
       <workItem from="1468964631187" duration="270000" />
       <workItem from="1469269035988" duration="12467000" />
       <workItem from="1469297577099" duration="10222000" />
-      <workItem from="1469394287282" duration="4019000" />
+      <workItem from="1469394287282" duration="4419000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1468151998150</created>
@@ -672,11 +674,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469482854370</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="order creation fix">
+      <created>1469483475598</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1469483475598</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70953000" />
+    <option name="totallyTimeSpent" value="71353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="896" extended-state="6" />
@@ -738,7 +747,8 @@
     <MESSAGE value="shopify creates transaction on complete notification from payU" />
     <MESSAGE value="extra log information for payu-notification" />
     <MESSAGE value="fix for mark as paid" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix for mark as paid" />
+    <MESSAGE value="order creation fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="order creation fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -842,16 +852,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/orderStatuses.js" />
-    <entry file="file://$PROJECT_DIR$/src/thank-you/messages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
-          <folding>
-            <marker date="1469290828000" expanded="true" signature="263:501" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/checkout_4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9030">
@@ -935,17 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thank-you.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#43#66#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,6 +1086,24 @@
         <state relative-caret-position="285">
           <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thank-you.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thank-you/messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="94" selection-start-line="36" selection-start-column="94" selection-end-line="36" selection-end-column="94" />
+          <folding>
+            <marker date="1469484413000" expanded="true" signature="263:501" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

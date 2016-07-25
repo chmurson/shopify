@@ -34,7 +34,7 @@ export function createSomeError() {
  */
 export function createCreatedMessage(payUUrl) {
   return `
-    <p>Za chwilę zostaniesz przekierowany na strone PayU gdzię będziesz mógł dokonał opłaty.</p>
+    <p>Za chwilę zostaniesz przekierowany na strone PayU gdzię będziesz mógł dokonać płatności.</p>
     <p>Jeśli tak się nie stanie, możesz się przenieść klikając <a id="navigate-to-payu" href="${payUUrl}">tutaj</a></p>    
   `;
 }
