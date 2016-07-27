@@ -21,6 +21,7 @@ const $shippingMethod = $('.section--shipping-method');
 export function runShippingMethod() {
   const personalInfo = getPersonalInfo();
   if (!personalInfo) {
+    console.warn("No personal info");
     //if no personal info, it means there are lack of proper data we can build this page on so let's navigate user
     //back to contact information page
     window.location.href = window.location.href.replace(/\?(.)*/, '') + '?step=contact_information';
@@ -59,7 +60,7 @@ function getPersonalInfo() {
     return undefined;
   }
   try {
-    return Object.assign(new PersonalInfo(), JSON.parse(Cookies.get(STORAGE_PERSONAL_INFO)));
+    return Object.assign(new PersonalInfo(), serializedPersonalInfo);
   } catch (e) {
     return undefined;
   }
