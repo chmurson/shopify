@@ -55,7 +55,7 @@ function getPaczkomat() {
  * @returns {*|PersonalInfo}
  */
 function getPersonalInfo() {
-  const serializedPersonalInfo = Cookies.get(STORAGE_PACZKOMATY_KEY);
+  const serializedPersonalInfo = Cookies.get(STORAGE_PERSONAL_INFO);
   if (!serializedPersonalInfo) {
     return undefined;
   }
