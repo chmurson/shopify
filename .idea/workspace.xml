@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="89e19469-14d4-46dc-9e88-7561d364f1e9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/order-payu-start.ts" afterPath="$PROJECT_DIR$/server/routes/order-payu-start.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/thank-you.js" afterPath="$PROJECT_DIR$/src/thank-you.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/thank-you/messages.js" afterPath="$PROJECT_DIR$/src/thank-you/messages.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/satelite/addtional-thank-you.html" afterPath="$PROJECT_DIR$/src/satelite/addtional-thank-you.html" />
     </list>
     <ignored path="shopify-glassify-checkout-paczkomaty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="messages.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/thank-you/messages.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="219">
@@ -104,18 +102,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkout_3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/checkout_3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="349" column="62" selection-start-line="349" selection-start-column="62" selection-end-line="349" selection-end-column="62" />
-              <folding>
-                <element signature="n#style#0;n#div#7;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/satelite/README.md">
           <provider editor-type-id="MultiMarkdownFxPreviewEditor">
@@ -123,8 +109,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="90">
-                <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="64" />
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="57" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="57" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -132,11 +118,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkout_2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/checkout_2.html">
+      <file leaf-file-name="adittional-ga-js.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/satelite/adittional-ga-js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="21" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addtional-thank-you.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/satelite/addtional-thank-you.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -164,14 +160,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_12" />
         <option value="$PROJECT_DIR$/server/routes/index.ts" />
         <option value="$PROJECT_DIR$/src/satelite/README.md" />
-        <option value="$PROJECT_DIR$/src/satelite/adittional-ga-js.js" />
         <option value="$PROJECT_DIR$/src/vendo.js" />
         <option value="$PROJECT_DIR$/src/vendor.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/contact-information/paczkomatSelect.js" />
         <option value="$PROJECT_DIR$/src/contact-information/inpostApi.js" />
         <option value="$PROJECT_DIR$/src/satelite/addtional-thank-you.js" />
-        <option value="$PROJECT_DIR$/src/satelite/addtional-thank-you.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/common/PersonalInfo.js" />
         <option value="$PROJECT_DIR$/src/contact-information/index.js" />
@@ -210,6 +204,8 @@
         <option value="$PROJECT_DIR$/src/thank-you.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13" />
         <option value="$PROJECT_DIR$/src/thank-you/messages.js" />
+        <option value="$PROJECT_DIR$/src/satelite/adittional-ga-js.js" />
+        <option value="$PROJECT_DIR$/src/satelite/addtional-thank-you.html" />
       </list>
     </option>
   </component>
@@ -936,21 +932,28 @@
       <option name="project" value="LOCAL" />
       <updated>1469690837276</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="output loggin info when error when error reporting">
+      <created>1469744245415</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1469744245415</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76372000" />
+    <option name="totallyTimeSpent" value="76671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1046" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24954791" sideWeight="0.6115445" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="npm" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24954791" sideWeight="0.38845554" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24954791" sideWeight="0.38845554" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3951782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -979,7 +982,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixes for thank you page" />
     <MESSAGE value="cleaning of package.json" />
     <MESSAGE value="fixes" />
     <MESSAGE value="added continue_url to createsPayUBody function" />
@@ -1004,7 +1006,8 @@
     <MESSAGE value="fix bug &quot;no personal info&quot;" />
     <MESSAGE value="fixed personal info on shipping step&#10;fixed payu logo on payment step" />
     <MESSAGE value="added auto checking shipping method checkbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="added auto checking shipping method checkbox" />
+    <MESSAGE value="output loggin info when error when error reporting" />
+    <option name="LAST_COMMIT_MESSAGE" value="output loggin info when error when error reporting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1025,15 +1028,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/My API (4).js" />
-    <entry file="file://$PROJECT_DIR$/src/pay-u/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/config/dev.sh" />
     <entry file="file://$PROJECT_DIR$/server/config/prod.sh">
       <provider selected="true" editor-type-id="text-editor">
@@ -1285,20 +1279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/satelite/README.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="64" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/checkout_2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1367,6 +1347,36 @@
           <folding>
             <marker date="1469744117000" expanded="true" signature="263:501" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/satelite/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="57" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="57" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/satelite/adittional-ga-js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/satelite/addtional-thank-you.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
