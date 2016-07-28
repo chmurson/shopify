@@ -34,7 +34,8 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
       .then(()=> {
         res.redirect(checkoutUrl + `?error=true&errorNumber=${currentDocument.errors.length - 1}`);
       })
-      .catch(()=> {
+      .catch((error)=> {
+        console.error(error);
         res.redirect(checkoutUrl + '?error=true');
       });
   });
@@ -92,5 +93,5 @@ function reportErrorInDocument(document, error) {
     timestamp: new Date().toUTCString(),
     where: 'order-payu-status'
   });
-  return updateDocument(ORDERS_COLLECTION_NAME, document, 'id');
+  return updateDocument(ORDERS_COLLECTION_NAME, document);
 }

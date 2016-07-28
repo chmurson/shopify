@@ -19,10 +19,12 @@ export function createServerError() {
  * @returns {string}
  */
 export function createSomeError() {
+  const url = window.location.href.split('?')[0];
+
   return `
     <h2 class="os-step__title error">Błąd serwera</h2>
     <p>W trakcie przetwarzania transakcji PayU wystąpił błąd.</p>
-    <p>Kliknij <a href="${window.location.href}">tutaj</a>, aby spróbować jeszcze raz.</p>
+    <p>Kliknij <a href="${url}">tutaj</a>, aby spróbować jeszcze raz.</p>
     <p>Jeśli problem nie ustąpi, skontaktuj się z nami.</p>
   `;
 }

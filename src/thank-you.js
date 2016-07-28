@@ -35,17 +35,16 @@ const paymentStatusToShowInfo = {
  * @param {Order} order
  */
 function showOrderInfo(order) {
-  const hasError = hasOrderAnError(order);
-  if (order.cancelled_at){
+  if (hasOrderAnError()) {
+    return infoSomeError();
+  }
+  if (order.cancelled_at) {
     return; //do nothing order is cancelled
   }
   if (order.isPayU === false) {
     return; //do nothing if it's not PayU
   }
   const infoAction = paymentStatusToShowInfo[order.status];
-  if (!infoAction || hasError) {
-    return infoSomeError();
-  }
   infoAction.call();
 }
 
@@ -100,7 +99,7 @@ function turnOffDefaultLoadingScreen() {
  * @param order
  * @returns {boolean}
  */
-function hasOrderAnError(order) {
+function hasOrderAnError() {
   const questionMarkPos = location.href.indexOf('?');
   if (questionMarkPos === -1) {
     return false;
@@ -109,11 +108,7 @@ function hasOrderAnError(order) {
   if (!params || params.error !== "true") {
     return false;
   }
-  const errorNumber = parseInt(params.errorNumber);
-  if (typeof errorNumber !== "number") {
-    return false;
-  }
-  return !!(order.errors && order.errors[errorNumber]);
+  return true;
 }
 
 function getPayUStartUrl(checkout_token) {
