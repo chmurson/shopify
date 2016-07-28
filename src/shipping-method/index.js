@@ -82,12 +82,20 @@ function performChangesForSelectedPaczkomat(paczkomat) {
   $shippingMethod.find('.content-box__row').hide();
   getAllContentsBoxRowOfPaczkomaty().show();
   $shippingMethod.find('.content-box__row:hidden').remove();
+
+  selectFristShippingMethodCheckbox();
 }
 
 function performChangesForNotSelectedPaczkomat() {
   $shippingMethod.find('.content-box__row').show();
   getAllContentsBoxRowOfPaczkomaty().hide();
   $shippingMethod.find('.content-box__row:hidden').remove();
+
+  selectFristShippingMethodCheckbox();
+}
+
+function selectFristShippingMethodCheckbox() {
+  $shippingMethod.find('input.input-radio').first().prop("checked", true)
 }
 
 function getAllContentsBoxRowOfPaczkomaty() {
