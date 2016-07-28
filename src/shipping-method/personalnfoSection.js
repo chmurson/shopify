@@ -11,7 +11,7 @@ export function createPersonalSection(personalInfo) {
         <div class="section__content">
           <p>
             ${personalInfo.firstName} ${personalInfo.lastName}<br>
-            telefon: ${personalInfo.phone}
+            telefon: ${personalInfo.phone || '--'}
           </p>
         </div>
       </div>`);

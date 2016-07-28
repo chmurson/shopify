@@ -60,7 +60,7 @@ function getPersonalInfo() {
     return undefined;
   }
   try {
-    return Object.assign(new PersonalInfo(), serializedPersonalInfo);
+    return Object.assign(new PersonalInfo(), JSON.parse(serializedPersonalInfo));
   } catch (e) {
     return undefined;
   }
