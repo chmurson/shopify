@@ -9,15 +9,18 @@ import {startOrderFetching, paymentStatuses} from './pay-u';
 import * as messages from './thank-you/messages'
 
 const checkout_token = Shopify.checkout.token;
-//const checkout_token = "0975fe6fc798dc6ef50b0ee4b9ac494a";
+//const checkout_token = "753eb101d811e085fe4ece2570581cc8";
+const $submitButton = $('.step__footer__continue-btn.btn');
 
 processOrder();
 
 function processOrder() {
+  $submitButton.css('visibility', 'hidden');
   startOrderFetching(checkout_token)
     .then(showOrderInfo)
     .catch(infoServerError)
-    .then(turnOffDefaultLoadingScreen);
+    .then(turnOffDefaultLoadingScreen)
+    .then(()=>$submitButton.css('visibility', 'visible'));
 }
 
 const paymentStatusToShowInfo = {
@@ -68,6 +71,11 @@ function createdInfo() {
   const timer = setTimeout(()=> {
     location.href = url;
   }, 5000);
+
+  $('.step__footer__continue-btn.btn').click((e)=> {
+    e.preventDefault();
+    window.location.href = url;
+  });
 }
 function rejectedInfo() {
   Shopify.Checkout.OrderStatus.addContentBox(messages.createRejectedMessage());

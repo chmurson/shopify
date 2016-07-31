@@ -21,7 +21,7 @@ function createPayUShippingMethodOption() {
   //savePayUSettingsOnSubmit($submitButton); //not used anymore since we are receiving proper hook call from Shopify with all data we need
 
   function modifyPayElement($payUPayment) {
-    $payUPayment.find('label').find('.radio-wrapper').append(payULogoHtml);
+    $payUPayment.find('label').find('.radio__label__accessory').append(payULogoHtml);
   }
 
   function savePayUSettingsOnSubmit($submitButton) {
@@ -36,14 +36,12 @@ function createPayUShippingMethodOption() {
 }
 
 const payULogoHtml = `
-<div class="radio__accessory">
     <span class="visually-hidden">Zapłać z :</span>
     <ul data-brand-icons-for-gateway="72434695">
         <li class="payment-icon">
             <img src="https://chmurson.github.io/shopify/images/payu.png"/>
         </li>
     </ul>
-</div>
 `;
 
 function saveCheckoutGatewayMethod(checkout_token, gateway_method) {
