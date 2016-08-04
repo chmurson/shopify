@@ -13,7 +13,6 @@ application.post('/order-payu-notification', requestHandler);
 const ORDER_IS_ALREADY_COMPLETED_ERROR = "ORDER_IS_ALREADY_COMPLETED_ERROR";
 
 function requestHandler(req:express.Request, res:express.Response, next:express.NextFunction) {
-  console.log(req.body);
   if (!req.body.order || !req.body.order.extOrderId) {
     return res.status(500).json(createFailureJson("no extOrderId set"));
   }
@@ -64,22 +63,18 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
     return getOrder()
       .then(order=> {
         return shopify.order.cancel(order.id);
-      }).then((result)=> {
-        console.log(result);
       });
   }
 
   function markShopifyOrderAsPaid() {
     console.log("markShopifyOrderAsPaid");
-    
+
     return getOrder()
       .then(order=> {
         return shopify.transaction.create(order.id, {
           "amount": order.total_price,
           "kind": "capture"
         });
-      }).then((result)=> {
-        console.log(result);
       });
   }
 
