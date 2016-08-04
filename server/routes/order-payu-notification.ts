@@ -32,7 +32,10 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
     })
     .then(()=> {
       if (status === "COMPLETED") {
-        return markShopifyOrderAsPaid()
+        return markShopifyOrderAsPaid();
+      }
+      if (status === "CANCELED") {
+        return markShopifyOrderAsCanceled();
       }
       return;
     })
@@ -50,16 +53,25 @@ function requestHandler(req:express.Request, res:express.Response, next:express.
       res.status(status).json(createFailureJson(msg))
     });
 
+  const apiKey = env.get(constants.SHOPIFY_API_KEY);
+  const password = env.get(constants.SHOPIFY_API_PASSWORD);
+  const shopName = env.get(constants.SHOPIFY_SHOP_NAME);
+  const shopify = new Shopify(shopName, apiKey, password);
+
+  function markShopifyOrderAsCanceled() {
+    console.log("markShopifyOrderAsCanceled");
+
+    return getOrder()
+      .then(order=> {
+        return shopify.order.cancel(order.id);
+      }).then((result)=> {
+        console.log(result);
+      });
+  }
 
   function markShopifyOrderAsPaid() {
     console.log("markShopifyOrderAsPaid");
-    const id = req.body.order.id;
-
-    const apiKey = env.get(constants.SHOPIFY_API_KEY);
-    const password = env.get(constants.SHOPIFY_API_PASSWORD);
-    const shopName = env.get(constants.SHOPIFY_SHOP_NAME);
-    const shopify = new Shopify(shopName, apiKey, password);
-
+    
     return getOrder()
       .then(order=> {
         return shopify.transaction.create(order.id, {
