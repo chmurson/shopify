@@ -26,12 +26,11 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "body-parser-rawbody": "^1.13.2",
     "cors": "^2.7.1",
     "es6-promise": "^3.2.1",
     "express": "^4.13.4",
     "http-server": "^0.9.0",
-    "media-typer": "^0.3.0",
-    "raw-body": "^2.1.7",
     "request": "2.69.0",
     "request-promise": "^3.0.0",
     "shopify-api-node": "^1.2.0",
