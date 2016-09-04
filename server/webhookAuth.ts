@@ -3,17 +3,19 @@ import {SHOPIFY_SHARED_SECRET} from './constants';
 import {get as getEnv} from './env';
 
 var getRawBody = require('raw-body');
-var typer = require('media-typer')
+var typer = require('media-typer');
 
 export function webhookAuth(req, res, next) {
-  console.log('fetching data has started!');
+
 
   getRawBody(req, {
     length: req.headers['content-length'],
     limit: '1mb',
     encoding: typer.parse(req.headers['content-type']).parameters.charset
   }, function (err, string) {
+    console.log('fetching data has ended');
     if (err) {
+      console.error("Could not fetch raw body");
       console.error(err);
       return res.sendStatus(401);
     }
