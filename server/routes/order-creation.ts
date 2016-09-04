@@ -3,24 +3,18 @@ import {insertOrUpdateDocument} from './../database';
 import * as express from 'express';
 import {ORDERS_COLLECTION_NAME} from './../model';
 
-import {get as getEnv} from '../env';
-import {SHOPIFY_WEBHOOK_VERIFY_TOKEN} from './../constants';
+import {webhookAuth} from './../webhookAuth';
 
 import {createFailureJson, createSuccessJson} from './../jsonResponses';
 
 /**
  * This is hook for shopify. Requested once checkout is finished (user goes to thank you page), which is creation of order.
  */
-application.post('/order-creation', requestHandler);
+application.post('/order-creation', webhookAuth, requestHandler);
 
 function requestHandler(req:express.Request, res:express.Response, next:express.NextFunction) {
   //@todo here should be API verification
   const document = req.body;
-
-  console.log(req.get('X-Shopify-Hmac-SHA256'));
-  if (req.get('X-Shopify-Hmac-SHA256') !== getEnv(SHOPIFY_WEBHOOK_VERIFY_TOKEN)) {
-    console.log("Webhook is not authorized!");
-  }
 
   if (!document.checkout_token) {
     console.log("No checkout_token");

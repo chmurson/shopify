@@ -16,7 +16,7 @@ if (!env.check([
     constants.SHOPIFY_API_KEY,
     constants.SHOPIFY_API_PASSWORD,
     constants.SHOPIFY_SHOP_NAME,
-    constants.SHOPIFY_WEBHOOK_VERIFY_TOKEN
+    constants.SHOPIFY_SHARED_SECRET
   ])) {
   process.exit(1);
 }
