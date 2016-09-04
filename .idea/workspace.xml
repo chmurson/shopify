@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89e19469-14d4-46dc-9e88-7561d364f1e9" name="Default" comment="">
+    <list default="true" id="89e19469-14d4-46dc-9e88-7561d364f1e9" name="Default" comment="removed some console.logs">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/order-payu-notification.ts" afterPath="$PROJECT_DIR$/server/routes/order-payu-notification.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/constants.ts" afterPath="$PROJECT_DIR$/server/constants.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/index.ts" afterPath="$PROJECT_DIR$/server/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routes/order-creation.ts" afterPath="$PROJECT_DIR$/server/routes/order-creation.ts" />
     </list>
     <ignored path="shopify-glassify-checkout-paczkomaty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,68 +30,9 @@
       <file leaf-file-name="thank-you.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/thank-you.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="540">
+              <caret line="43" column="24" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="24" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scratch_14" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_14">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/thank-you/messages.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-              <folding>
-                <marker date="1469744117000" expanded="true" signature="263:501" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addtional-thank-you.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/satelite/addtional-thank-you.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/payment-method/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
-              <folding>
-                <marker date="1469997604000" expanded="true" signature="1372:1607" placeholder="..." />
-                <marker date="1469997604000" expanded="true" signature="1472:1606" placeholder="..." />
-                <marker date="1469997604000" expanded="true" signature="1506:1596" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order-payu-notification.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/routes/order-payu-notification.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-                <marker date="1470350639000" expanded="true" signature="3418:3420" placeholder="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -99,6 +42,70 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order-creation.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/routes/order-creation.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/config.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/constants.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <folding>
+                <element signature="e#44#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="env.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/env.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/database.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -117,26 +124,13 @@
       <file leaf-file-name="scratch_17" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_17">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="870">
               <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
               <folding>
                 <element signature="e#2241#2991#0" expanded="false" />
                 <element signature="e#3015#3346#0" expanded="false" />
                 <element signature="e#3370#3785#0" expanded="false" />
                 <element signature="e#3809#4224#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkout_3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/checkout_3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4395">
-              <caret line="417" column="34" selection-start-line="417" selection-start-column="34" selection-end-line="417" selection-end-column="34" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#7;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -190,10 +184,7 @@
         <option value="$PROJECT_DIR$/server/routes/order-payu-update.js" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-update.ts" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.es6" />
-        <option value="$PROJECT_DIR$/server/index.ts" />
         <option value="$PROJECT_DIR$/server/env.ts" />
-        <option value="$PROJECT_DIR$/server/constants.ts" />
-        <option value="$PROJECT_DIR$/server/routes/order-creation.ts" />
         <option value="$PROJECT_DIR$/src/shipping-method/personalnfoSection.js" />
         <option value="$PROJECT_DIR$/assets/checkout_2.html" />
         <option value="$PROJECT_DIR$/src/shipping-method/index.js" />
@@ -210,6 +201,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_18" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_17" />
         <option value="$PROJECT_DIR$/server/routes/order-payu-notification.ts" />
+        <option value="$PROJECT_DIR$/server/constants.ts" />
+        <option value="$PROJECT_DIR$/server/index.ts" />
+        <option value="$PROJECT_DIR$/server/routes/order-creation.ts" />
       </list>
     </option>
   </component>
@@ -293,24 +287,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopify-glassify-checkout-paczkomaty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopify-glassify-checkout-paczkomaty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -346,7 +322,7 @@
     <property name="SearchEverywhereHistoryKey" value="thank&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/thank-you.js&#10;messa&#9;FILE&#9;file:///Users/wpiat/Dev/shopify/src/thank-you/messages.js&#10;Create&#9;null&#9;null&#10;rea&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/satelite/README.md&#10;paczkomatSe&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/contact-information/paczkomatSelect.js&#10;parseXm&#9;null&#9;null&#10;extra.s&#9;FILE&#9;file:///Users/chmurson/Dev/shopify-glassify-checkout-paczkomaty/src/extra.styl" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$3/Languages" value="ECMAScript 6&#10;JSON" />
   </component>
-  <component name="RunManager" selected="Node.js.scratch_17">
+  <component name="RunManager" selected="Node.js.index.js">
     <configuration default="false" name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/server">
       <envs>
         <env name="SHOPIFY_API_KEY" value="76716e64ef3e04b55f58c66f3dbbc6f4" />
@@ -469,7 +445,9 @@
       <workItem from="1469297577099" duration="10222000" />
       <workItem from="1469394287282" duration="5962000" />
       <workItem from="1469996896795" duration="1582000" />
-      <workItem from="1470345104836" duration="2936000" />
+      <workItem from="1470345104836" duration="3971000" />
+      <workItem from="1471074459313" duration="795000" />
+      <workItem from="1473009825939" duration="1409000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1468151998150</created>
@@ -751,22 +729,28 @@
       <option name="project" value="LOCAL" />
       <updated>1470350129794</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="removed some console.logs">
+      <created>1470350657165</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1470350657165</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81599000" />
+    <option name="totallyTimeSpent" value="84838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1046" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24954791" sideWeight="0.6016771" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24954791" sideWeight="0.5890985" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32809225" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24954791" sideWeight="0.39832285" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24954791" sideWeight="0.41090146" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3951782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5922432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -779,6 +763,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32809225" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -794,7 +779,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="FIX shopCheckoutUrl URL" />
     <MESSAGE value="block notifications if order is already completed" />
     <MESSAGE value="improvements in storing payment status" />
     <MESSAGE value="fix getOrder" />
@@ -819,7 +803,8 @@
     <MESSAGE value="fixed load of scripts for thank you page" />
     <MESSAGE value="submit button is hidden when loading on thank you page" />
     <MESSAGE value="mark order as cancelled" />
-    <option name="LAST_COMMIT_MESSAGE" value="mark order as cancelled" />
+    <MESSAGE value="removed some console.logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed some console.logs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -915,34 +900,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/shopify-api-node/package.json" />
-    <entry file="file://$PROJECT_DIR$/server/config.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/env.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/constants.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/jsonResponses.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -953,13 +910,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5.es6" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.es6" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_6.es6" />
-    <entry file="file://$PROJECT_DIR$/server/routes/order-creation.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/contact-information/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2130">
@@ -1002,14 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/database.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/order-payu-start.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1025,29 +967,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/satelite/README.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="45">
             <caret line="3" column="57" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="57" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/satelite/adittional-ga-js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,10 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4395">
           <caret line="417" column="34" selection-start-line="417" selection-start-column="34" selection-end-line="417" selection-end-column="34" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#7;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1066,19 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
-          <folding>
-            <marker date="1469997604000" expanded="true" signature="1372:1607" placeholder="..." />
-            <marker date="1469997604000" expanded="true" signature="1472:1606" placeholder="..." />
-            <marker date="1469997604000" expanded="true" signature="1506:1596" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thank-you.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="17" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1094,15 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_16">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1110,20 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3165">
           <caret line="211" column="1" selection-start-line="211" selection-start-column="1" selection-end-line="211" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_17">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-          <folding>
-            <element signature="e#2241#2991#0" expanded="false" />
-            <element signature="e#3015#3346#0" expanded="false" />
-            <element signature="e#3370#3785#0" expanded="false" />
-            <element signature="e#3809#4224#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1137,10 +1036,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/thank-you/messages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="300">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <marker date="1469744117000" expanded="true" signature="263:501" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/order-payu-notification.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <marker date="1470350639000" expanded="true" signature="3418:3420" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thank-you.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_16">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_17">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+          <folding>
+            <element signature="e#2241#2991#0" expanded="false" />
+            <element signature="e#3015#3346#0" expanded="false" />
+            <element signature="e#3370#3785#0" expanded="false" />
+            <element signature="e#3809#4224#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1153,13 +1100,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/order-payu-notification.ts">
+    <entry file="file://$PROJECT_DIR$/server/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        <state relative-caret-position="120">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="e#44#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/constants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/env.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/order-creation.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
-            <marker date="1470350639000" expanded="true" signature="3418:3420" placeholder="{...}" />
           </folding>
         </state>
       </provider>
